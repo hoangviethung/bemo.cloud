@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <!-- *** CSS *** //-->
     <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/libraries/swiper/swiper-bundle.min.css"/>
     <!-- *** CSS ON SCREEN *** //-->
     <link rel="stylesheet" href="./assets/css/home.css"/>
     <!-- *** FAVICON *** //-->
@@ -16,17 +17,96 @@
   </head>
   <body class="index-page">
     <!-- *** HEADER *** //-->
-    <header></header>
+    <header class="haeder-default header--fixed">
+      <div class="container h-100">
+        <div class="header-wrapper"><a class="logo" href="#"><img src="../assets/images/logo-white.png" alt="BEMO"/></a>
+          <ul class="main-menu">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Solution</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="languages dropdown">
+            <div class="button-choose-language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="language-icon" src="../assets/images/languages-icons/english.png" alt="ENG"/>
+              <div class="language-name">ENG</div>
+            </div>
+            <div class="dropdown-menu">
+              <div class="button-choose-language dropdown-item"><img class="language-icon" src="../assets/images/languages-icons/vietnamese.png" alt="VIE"/>
+                <div class="language-name">VIE</div>
+              </div>
+              <div class="button-choose-language dropdown-item"><img class="language-icon" src="../assets/images/languages-icons/japanese.png" alt="JPN"/>
+                <div class="language-name">JPN</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- *** MAIN *** //-->
     <main>
-      <div class="container"><a href="documents.html">Read Me</a></div>
+      <section class="hero-banner-index">
+        <div class="image-bg"><img src="../assets/images/hero-banner/01.png" alt="BEMO-ERP"/></div>
+        <div class="content-wrapper">
+          <div class="container">
+            <div class="content">
+              <h1>BỘ GIẢI PHÁP CÔNG NGHỆ CHUYỂN ĐỔI SỐ DOANH NGHIỆP</h1>
+              <p>Bemo Cloud cung cấp bộ giải pháp công nghệ toàn diện hỗ trợ cho quá trình chuyển đổi số và sự phát triển bền vững của doanh nghiệp. Chúng tôi mong muốn đi cùng và hỗ trợ cho sự phát triển của doanh nghiệp.</p>
+            </div>
+            <div class="action"><a class="btn btn-secondary" href="#">CONTACT</a></div>
+          </div>
+        </div>
+      </section>
+      <section class="packages-index">
+        <div class="container">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="packages-wrapper">
+                  <div class="packages-image"><img src="../assets/images/packages-illustration/human-resource-management.png" alt="human-resource-management"/></div>
+                  <div class="packages-name">Quản trị nguồn nhân lực</div>
+                  <div class="packages-desc">Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</div>
+                  <div class="packages-action"><a class="btn btn-sm btn-outline-primary" href="#">Xem thêm</a></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="packages-wrapper">
+                  <div class="packages-image"><img src="../assets/images/packages-illustration/sales-management.png" alt="sales-management"/></div>
+                  <div class="packages-name">Quản trị nguồn nhân lực</div>
+                  <div class="packages-desc">Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</div>
+                  <div class="packages-action"><a class="btn btn-sm btn-outline-primary" href="#">Xem thêm</a></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="packages-wrapper">
+                  <div class="packages-image"><img src="../assets/images/packages-illustration/accounting-management.png" alt="accounting-management"/></div>
+                  <div class="packages-name">Quản trị nguồn nhân lực</div>
+                  <div class="packages-desc">Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</div>
+                  <div class="packages-action"><a class="btn btn-sm btn-outline-primary" href="#">Xem thêm</a></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="packages-wrapper">
+                  <div class="packages-image"><img src="../assets/images/packages-illustration/financial-management.png" alt="financial-management"/></div>
+                  <div class="packages-name">Quản trị nguồn nhân lực</div>
+                  <div class="packages-desc">Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</div>
+                  <div class="packages-action"><a class="btn btn-sm btn-outline-primary" href="#">Xem thêm</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- *** FOOTER *** //-->
     <footer></footer>
     <!-- *** JS *** //-->
     <script src="./assets/libraries/jquery/jquery-3.6.0.min.js"></script>
     <script src="./assets/libraries/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libraries/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <!-- *** JS ON SCREEN *** //-->
+    <script src="./assets/js/home.js"></script>
   </body>
 </html>

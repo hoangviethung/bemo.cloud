@@ -1,0 +1,91 @@
+.haeder-default {
+    height: 80px;
+    &.header--fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 500;
+    }
+    .logo {
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .main-menu {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-left: 88px;
+        a {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: uppercase;
+            transition: 0.3s opacity ease-in-out;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        li {
+            + li {
+                margin-left: 44px;
+            }
+            &.active {
+                a {
+                    color: map-get($map: $theme-colors, $key: "secondary");
+                }
+            }
+        }
+    }
+    .languages {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        .dropdown-menu {
+            .language-name {
+                color: map-get($map: $theme-colors, $key: "txt-body");
+            }
+            .button-choose-language {
+                &:after {
+                    content: none;
+                }
+            }
+        }
+    }
+    .button-choose-language {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        &:after {
+            color: #ffffff;
+            content: "\f107";
+            font-family: map-get($map: $theme-fonts, $key: "font-icons");
+            font-size: 1rem;
+            margin-left: 8px;
+        }
+    }
+    .language-icon {
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            object-fit: contain;
+            object-position: center center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .language-name {
+        color: #ffffff;
+        margin-left: 8px;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+}

@@ -1,7 +1,18 @@
 $theme-colors: (
-    "primary": #8200ff,
-    "secondary": #e90cb2,
-    "txt-body": #202121,
+    "primary": #0c3255,
+    "primary-dark-01": #051423,
+    "primary-dark-02": #081f36,
+    "primary-blue-medium-color-01": #12497d,
+    "primary-blue-medium-color-02": #175ea1,
+    "primary-blue-medium-color-03": #1c73c4,
+    "primary-blue-light-color-01": #2988e0,
+    "primary-blue-light-color-02": #4c9ce6,
+    "primary-blue-light-color-03": #70afeb,
+    "primary-blue-light-color-04": #b8d7f5,
+    "primary-blue-light-color-05": #dbebfa,
+    "primary-blue-light-color-06": #f1f6f9,
+    "secondary": #ffa800,
+    "txt-body": #333333,
     "background-1": #f4f7f6,
     "border": #e9e7ee,
     "success": #09c253,
@@ -17,6 +28,50 @@ $theme-fonts: (
 
 :root {
     --color-primary: #{map-get($map: $theme-colors, $key: "primary")};
+    --color-primary-dark-01: #{map-get(
+            $map: $theme-colors,
+            $key: "primary-dark-01"
+        )};
+    --color-primary-dark-02: #{map-get(
+            $map: $theme-colors,
+            $key: "primary-dark-02"
+        )};
+    --color-primary-blue-medium-color-01: #{map-get(
+            $map: $theme-colors,
+            $key: "primary-blue-medium-color-01"
+        )};
+    --color-primary-blue-medium-color-02: #{map-get(
+            $map: $theme-colors,
+            $key: "primary-blue-medium-color-02"
+        )};
+    --color-primary-blue-medium-color-03: #{map-get(
+            $map: $theme-colors,
+            $key: "primary-blue-medium-color-03"
+        )};
+    --color-primary-blue-light-color-01: #{map-get(
+            $map: $theme-colors,
+            $key: "primary-blue-light-color-01"
+        )};
+    --color-primary-blue-light-color-02: #{map-get(
+            $map: $theme-colors,
+            $key: "primary-blue-light-color-02"
+        )};
+    --color-primary-blue-light-color-03: #{map-get(
+            $map: $theme-colors,
+            $key: "primary-blue-light-color-03"
+        )};
+    --color-primary-blue-light-color-04: #{map-get(
+            $map: $theme-colors,
+            $key: "primary-blue-light-color-04"
+        )};
+    --color-primary-blue-light-color-05: #{map-get(
+            $map: $theme-colors,
+            $key: "primary-blue-light-color-05"
+        )};
+    --color-primary-blue-light-color-06: #{map-get(
+            $map: $theme-colors,
+            $key: "primary-blue-light-color-06"
+        )};
     --color-secondary: #{map-get($map: $theme-colors, $key: "secondary")};
     --color-txt-body: #{map-get($map: $theme-colors, $key: "txt-body")};
     --color-background-1: #{map-get($map: $theme-colors, $key: "background-1")};

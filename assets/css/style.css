@@ -1,7 +1,18 @@
 :root {
-  --color-primary: #8200ff;
-  --color-secondary: #e90cb2;
-  --color-txt-body: #202121;
+  --color-primary: #0c3255;
+  --color-primary-dark-01: #051423;
+  --color-primary-dark-02: #081f36;
+  --color-primary-blue-medium-color-01: #12497d;
+  --color-primary-blue-medium-color-02: #175ea1;
+  --color-primary-blue-medium-color-03: #1c73c4;
+  --color-primary-blue-light-color-01: #2988e0;
+  --color-primary-blue-light-color-02: #4c9ce6;
+  --color-primary-blue-light-color-03: #70afeb;
+  --color-primary-blue-light-color-04: #b8d7f5;
+  --color-primary-blue-light-color-05: #dbebfa;
+  --color-primary-blue-light-color-06: #f1f6f9;
+  --color-secondary: #ffa800;
+  --color-txt-body: #333333;
   --color-background-1: #f4f7f6;
   --color-border: #e9e7ee;
   --color-success: #09c253;
@@ -16,9 +27,9 @@
   display: none; }
 
 .txt-body {
-  color: #202121; }
+  color: #333333; }
   .txt-body:hover {
-    color: #6b6f6f; }
+    color: gray; }
 
 .txt-light {
   color: #ffffff; }
@@ -140,9 +151,12 @@
   top: 0;
   left: 0; }
 
+.h-100 {
+  height: 100%; }
+
 .container {
   position: relative;
-  max-width: 100%;
+  max-width: 1140px;
   margin: 0 auto;
   padding-left: 66px;
   padding-right: 66px; }
@@ -972,7 +986,7 @@ sup {
   top: -0.5em; }
 
 a {
-  color: #8200ff;
+  color: #0c3255;
   text-decoration: none;
   transition: color 0.3s ease-in-out; }
 
@@ -13152,43 +13166,43 @@ progress {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #8200ff;
-  border-color: #8200ff; }
+  background-color: #0c3255;
+  border-color: #0c3255; }
   .btn-primary:hover, .btn-primary:active {
-    background-color: #7500e6;
-    border-color: #7500e6; }
+    background-color: #09253f;
+    border-color: #09253f; }
   .btn-primary:focus {
-    box-shadow: 0 0 0 0.25rem rgba(130, 0, 255, 0.2); }
+    box-shadow: 0 0 0 0.25rem rgba(12, 50, 85, 0.2); }
 
 .btn-outline-primary {
-  color: #8200ff;
-  border-color: #8200ff; }
+  color: #0c3255;
+  border-color: #0c3255; }
   .btn-outline-primary:hover, .btn-outline-primary:active {
     color: #ffffff;
-    background-color: #7500e6;
-    border-color: #7500e6; }
+    background-color: #09253f;
+    border-color: #09253f; }
   .btn-outline-primary:focus {
-    box-shadow: 0 0 0 0.25rem rgba(130, 0, 255, 0.2); }
+    box-shadow: 0 0 0 0.25rem rgba(12, 50, 85, 0.2); }
 
 .btn-secondary {
   color: #ffffff;
-  background-color: #e90cb2;
-  border-color: #e90cb2; }
+  background-color: #ffa800;
+  border-color: #ffa800; }
   .btn-secondary:hover, .btn-secondary:active {
-    background-color: #d10b9f;
-    border-color: #d10b9f; }
+    background-color: #e69700;
+    border-color: #e69700; }
   .btn-secondary:focus {
-    box-shadow: 0 0 0 0.25rem rgba(233, 12, 178, 0.2); }
+    box-shadow: 0 0 0 0.25rem rgba(255, 168, 0, 0.2); }
 
 .btn-outline-secondary {
-  color: #e90cb2;
-  border-color: #e90cb2; }
+  color: #ffa800;
+  border-color: #ffa800; }
   .btn-outline-secondary:hover, .btn-outline-secondary:active {
     color: #ffffff;
-    background-color: #d10b9f;
-    border-color: #d10b9f; }
+    background-color: #e69700;
+    border-color: #e69700; }
   .btn-outline-secondary:focus {
-    box-shadow: 0 0 0 0.25rem rgba(233, 12, 178, 0.2); }
+    box-shadow: 0 0 0 0.25rem rgba(255, 168, 0, 0.2); }
 
 .btn-success {
   color: #ffffff;
@@ -13294,7 +13308,7 @@ progress {
 .dropdown-item {
   display: flex;
   align-items: center;
-  color: #8200ff;
+  color: #0c3255;
   width: 100%;
   padding: 0.75rem 1.125rem;
   clear: both;
@@ -13316,11 +13330,11 @@ progress {
     border-radius: 50%;
     margin-right: 8px; }
   .dropdown-item.dropdown-item-selected {
-    background-color: #8200ff; }
+    background-color: #0c3255; }
   .dropdown-item:not(.dropdown-item-selected):hover {
-    background-color: #8c14ff; }
+    background-color: #dbebfa; }
   .dropdown-item:not(.dropdown-item-selected):active {
-    background-color: #8200ff; }
+    background-color: #0c3255; }
   .dropdown-item:first-child {
     border-radius: 8px 8px 0 0; }
   .dropdown-item:last-child {
@@ -13375,7 +13389,7 @@ progress {
   align-items: flex-start;
   padding: 24px 24px 0 24px; }
   .modal-header .modal-title {
-    color: #8200ff;
+    color: #0c3255;
     font-size: 1.25rem;
     font-weight: 700; }
     .modal-header .modal-title .fa,
@@ -13416,3 +13430,70 @@ progress {
   border-radius: 50%;
   background-color: #ffffff;
   border: 0; }
+
+.haeder-default {
+  height: 80px; }
+  .haeder-default.header--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500; }
+  .haeder-default .logo {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; }
+  .haeder-default .header-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+  .haeder-default .main-menu {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 88px; }
+    .haeder-default .main-menu a {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #ffffff;
+      text-transform: uppercase;
+      transition: 0.3s opacity ease-in-out; }
+      .haeder-default .main-menu a:hover {
+        opacity: 0.8; }
+    .haeder-default .main-menu li + li {
+      margin-left: 44px; }
+    .haeder-default .main-menu li.active a {
+      color: #ffa800; }
+  .haeder-default .languages {
+    display: flex;
+    align-items: center;
+    margin-left: auto; }
+    .haeder-default .languages .dropdown-menu .language-name {
+      color: #333333; }
+    .haeder-default .languages .dropdown-menu .button-choose-language:after {
+      content: none; }
+  .haeder-default .button-choose-language {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center; }
+    .haeder-default .button-choose-language:after {
+      color: #ffffff;
+      content: "\f107";
+      font-family: "Font Awesome 5 Pro";
+      font-size: 1rem;
+      margin-left: 8px; }
+  .haeder-default .language-icon {
+    border-radius: 50%;
+    overflow: hidden; }
+    .haeder-default .language-icon img {
+      object-fit: contain;
+      object-position: center center;
+      width: 100%;
+      height: 100%; }
+  .haeder-default .language-name {
+    color: #ffffff;
+    margin-left: 8px;
+    font-weight: 700;
+    font-size: 1rem; }

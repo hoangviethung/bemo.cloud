@@ -5,6 +5,52 @@ block var
     - pageTitle = "Your Title"
 block css
     link(rel="stylesheet", href="./assets/css/home.css")
+block js
+    script(src="./assets/js/home.js")
 block main
-    .container
-        a(href="documents.html") Read Me
+    section.hero-banner-index
+        .image-bg
+            img(src="../assets/images/hero-banner/01.png", alt="BEMO-ERP")
+        .content-wrapper
+            .container
+                .content
+                    h1 BỘ GIẢI PHÁP CÔNG NGHỆ CHUYỂN ĐỔI SỐ DOANH NGHIỆP
+                    p Bemo Cloud cung cấp bộ giải pháp công nghệ toàn diện hỗ trợ cho quá trình chuyển đổi số và sự phát triển bền vững của doanh nghiệp. Chúng tôi mong muốn đi cùng và hỗ trợ cho sự phát triển của doanh nghiệp.
+                .action
+                    a.btn.btn-secondary(href="#") CONTACT
+    section.packages-index
+        .container
+            .swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        .packages-wrapper
+                            .packages-image
+                                img(src="../assets/images/packages-illustration/human-resource-management.png", alt="human-resource-management")
+                            .packages-name Quản trị nguồn nhân lực
+                            .packages-desc Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số
+                            .packages-action
+                                a.btn.btn-sm.btn-outline-primary(href="#") Xem thêm
+                    .swiper-slide
+                        .packages-wrapper
+                            .packages-image
+                                img(src="../assets/images/packages-illustration/sales-management.png", alt="sales-management")
+                            .packages-name Quản trị nguồn nhân lực
+                            .packages-desc Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số
+                            .packages-action
+                                    a.btn.btn-sm.btn-outline-primary(href="#") Xem thêm
+                    .swiper-slide
+                        .packages-wrapper
+                            .packages-image
+                                img(src="../assets/images/packages-illustration/accounting-management.png", alt="accounting-management")
+                            .packages-name Quản trị nguồn nhân lực
+                            .packages-desc Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số
+                            .packages-action
+                                a.btn.btn-sm.btn-outline-primary(href="#") Xem thêm
+                    .swiper-slide
+                        .packages-wrapper
+                            .packages-image
+                                img(src="../assets/images/packages-illustration/financial-management.png", alt="financial-management")
+                            .packages-name Quản trị nguồn nhân lực
+                            .packages-desc Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số
+                            .packages-action
+                                a.btn.btn-sm.btn-outline-primary(href="#") Xem thêm

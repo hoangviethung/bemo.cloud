@@ -1,1 +1,29 @@
-header
+header.haeder-default.header--fixed
+    .container.h-100
+        .header-wrapper
+            a(href="#").logo
+                img(src="../assets/images/logo-white.png", alt="BEMO")
+            ul.main-menu
+                li.active
+                    a(href="#") Home
+                li
+                    a(href="#") About us
+                li
+                    a(href="#") Services
+                li
+                    a(href="#") Solution
+                li
+                    a(href="#") Blog
+                li
+                    a(href="#") Contact
+            .languages.dropdown
+                .button-choose-language(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                    img.language-icon(src="../assets/images/languages-icons/english.png", alt="ENG")
+                    .language-name ENG
+                .dropdown-menu
+                    .button-choose-language.dropdown-item
+                        img.language-icon(src="../assets/images/languages-icons/vietnamese.png", alt="VIE")
+                        .language-name VIE
+                    .button-choose-language.dropdown-item
+                        img.language-icon(src="../assets/images/languages-icons/japanese.png", alt="JPN")
+                        .language-name JPN

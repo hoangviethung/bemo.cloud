@@ -1,3 +1,75 @@
-h1 {
-    color: red;
+@import "../scss/default/varivables.scss";
+
+.hero-banner-index {
+    position: relative;
+    .image-bg {
+        height: 100vh;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom center;
+        }
+    }
+    .content-wrapper {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        .content {
+            color: #ffffff;
+            max-width: 50%;
+            h1 {
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        .action {
+            margin-top: 24px;
+            .btn {
+                padding-right: 4.375rem;
+                padding-left: 4.375rem;
+            }
+        }
+    }
+}
+
+.packages-index {
+    margin-top: -92px;
+    .packages-wrapper {
+        background-color: #ffffff;
+        padding: 24px;
+        border-radius: 8px;
+    }
+    .packages-image {
+        margin-bottom: 10px;
+    }
+    .packages-name {
+        font-size: 1rem;
+        font-weight: 700;
+        color: map-get(
+            $map: $theme-colors,
+            $key: "primary-blue-medium-color-03"
+        );
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .packages-desc {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .packages-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+        .btn-sm {
+            padding-right: 3.125rem;
+            padding-left: 3.125rem;
+        }
+    }
 }
