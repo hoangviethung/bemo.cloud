@@ -1,0 +1,29 @@
+block var
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        // *** META *** //
+        include meta
+        // *** CSS *** //
+        include css
+        // *** CSS ON SCREEN *** //
+        block css
+        // *** FAVICON *** //
+        link(rel="shortcut icon", href="./assets/images/favicon.ico", type="image/x-icon")
+        // *** TITLE *** //
+        title #{pageTitle}
+    body(class=`${bodyClass}`)
+        // *** HEADER *** //
+        block header
+            include header
+        // *** MAIN *** //
+        main
+            block main
+        // *** FOOTER *** //
+        block footer
+            include footer
+        // *** JS *** //
+        include js
+        // *** JS ON SCREEN *** //
+        block js
