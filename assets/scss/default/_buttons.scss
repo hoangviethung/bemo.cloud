@@ -128,6 +128,16 @@
     }
 }
 
+.btn-outline-light {
+    color: #ffffff;
+    border-color: #ffffff;
+    &:hover,
+    &:active {
+        color: rgba($color: #ffffff, $alpha: 0.8);
+        border-color: rgba($color: #ffffff, $alpha: 0.8);
+    }
+}
+
 .btn-success {
     color: #ffffff;
     background-color: map-get($map: $theme-colors, $key: "success");

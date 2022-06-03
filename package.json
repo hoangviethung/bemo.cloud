@@ -5,10 +5,10 @@
     "main": "index.js",
     "scripts": {
         "compile:pug": "pug -w ./views/screens -o ./ -P",
-        "compile:sass": "node-sass ./assets/scss -o ./assets/css",
-        "watch:sass": "node-sass ./assets/scss -o ./assets/css --watch",
+        "compile:sass": "node-sass ./assets/scss -o ./assets/css --output-style expanded --source-map true --source-map-contents true",
+        "watch:sass": "node-sass ./assets/scss -o ./assets/css --output-style expanded --source-map true --source-map-contents true --watch",
         "delete:css": "del-cli --force ./assets/css/*",
-        "build:sass": "node-sass ./assets/scss -o ./assets/css --output-style compressed expanded --source-map true --source-map-contents true",
+        "build:sass": "node-sass ./assets/scss -o ./assets/css --output-style compressed",
         "server": "live-server",
         "dev": "npm-run-all -p delete:css compile:pug compile:sass watch:sass server",
         "build": "npm-run-all -p delete:css compile:pug build:sass"
@@ -25,7 +25,7 @@
     "dependencies": {
         "@fancyapps/fancybox": "^3.5.7",
         "jquery": "^3.6.0",
-        "swiper": "^6.8.3"
+        "swiper": "^6.8.4"
     },
     "devDependencies": {
         "del-cli": "^4.0.1",

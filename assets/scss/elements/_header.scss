@@ -1,4 +1,4 @@
-.haeder-default {
+.header-default {
     height: 80px;
     &.header--fixed {
         position: fixed;
@@ -67,7 +67,7 @@
         &:after {
             color: #ffffff;
             content: "\f107";
-            font-family: map-get($map: $theme-fonts, $key: "font-icons");
+            font-family: map-get($map: $theme-fonts, $key: "icons");
             font-size: 1rem;
             margin-left: 8px;
         }

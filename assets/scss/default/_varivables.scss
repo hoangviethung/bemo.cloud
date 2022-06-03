@@ -13,7 +13,8 @@ $theme-colors: (
     "primary-blue-light-color-06": #f1f6f9,
     "secondary": #ffa800,
     "txt-body": #333333,
-    "background-1": #f4f7f6,
+    "txt-gray": #808080,
+    "background-1": #ffffff,
     "border": #e9e7ee,
     "success": #09c253,
     "info": #1470eb,
@@ -22,8 +23,8 @@ $theme-colors: (
 );
 
 $theme-fonts: (
-    "font-body": "Varta",
-    "font-icons": "Font Awesome 5 Pro",
+    "body": "Roboto",
+    "icons": "Font Awesome 5 Pro",
 );
 
 :root {
@@ -74,12 +75,13 @@ $theme-fonts: (
         )};
     --color-secondary: #{map-get($map: $theme-colors, $key: "secondary")};
     --color-txt-body: #{map-get($map: $theme-colors, $key: "txt-body")};
+    --color-txt-gray: #{map-get($map: $theme-colors, $key: "txt-gray")};
     --color-background-1: #{map-get($map: $theme-colors, $key: "background-1")};
     --color-border: #{map-get($map: $theme-colors, $key: "border")};
     --color-success: #{map-get($map: $theme-colors, $key: "success")};
     --color-info: #{map-get($map: $theme-colors, $key: "info")};
     --color-warning: #{map-get($map: $theme-colors, $key: "warning")};
     --color-error: #{map-get($map: $theme-colors, $key: "error")};
-    --font-body: #{map-get($map: $theme-fonts, $key: "font-body")};
-    --font-icons: #{map-get($map: $theme-fonts, $key: "font-icons")};
+    --font-body: #{map-get($map: $theme-fonts, $key: "body")};
+    --font-icons: #{map-get($map: $theme-fonts, $key: "icons")};
 }

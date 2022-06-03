@@ -1,1 +1,49 @@
-footer
+footer.footer-default
+    .container
+        .row
+            .col-md-3
+                img.logo(src="../assets/images/logo-white.png", alt="BEMO")
+                a(href="tel:(+84) 37 2905 138").phone-number (+84) 37 2905 138
+                a(mailto="bemo.cloud@gmail.com").address-email bemo.cloud@gmail.com
+                ul.socials
+                    li.social__item
+                        a(href="#" target="_blank")
+                            i.fab.fa-facebook
+                    li.social__item
+                        a(href="#" target="_blank")
+                            i.fab.fa-twitter
+                    li.social__item
+                        a(href="#" target="_blank")
+                            i.fab.fa-linkedin
+            .col-md-3
+                .title-footer Useful Links
+                ul.links
+                    li.link__item
+                        a(href="#") Về chúng tôi
+                    li.link__item
+                        a(href="#") Điều khoản sử dụng
+                    li.link__item
+                        a(href="#") Chính sách bảo mật
+                    li.link__item
+                        a(href="#") Cam kết thực hiện dịch vụ
+                    li.link__item
+                        a(href="#") Quy trình nâng cấp phần mềm
+                    li.link__item
+                        a(href="#") Liên hệ
+            .col-md-3
+                .title-footer Our Services
+                ul.links
+                    li.link__item
+                        a(href="#") Dịch vụ
+                    li.link__item
+                        a(href="#") Giải pháp
+                    li.link__item
+                        a(href="#") Chia sẻ kiến thức
+            .col-md-3
+                .title-footer Newsletter
+                .sub-desc Subsrcibe for our upcoming latest articles and resources.
+                form.form-subsrcibe(action="#")
+                    .input-group
+                        input.form-control(type="text" placeholder="Your Email")
+                        button.btn.btn-submit
+                            i.fas.fa-paper-plane

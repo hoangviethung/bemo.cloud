@@ -1,0 +1,43 @@
+.lcl {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+
+    &-1 {
+        -webkit-line-clamp: 1;
+    }
+
+    &-2 {
+        -webkit-line-clamp: 2;
+    }
+
+    &-3 {
+        -webkit-line-clamp: 3;
+    }
+
+    &-4 {
+        -webkit-line-clamp: 4;
+    }
+
+    &-5 {
+        -webkit-line-clamp: 5;
+    }
+}
+
+.o_stripe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.bg-blue-lighter {
+    transform: skewY(12deg);
+    transform-origin: 0 50%;
+    background-color: map-get(
+        $map: $theme-colors,
+        $key: "primary-blue-light-color-06"
+    );
+}

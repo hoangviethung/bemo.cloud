@@ -20,37 +20,169 @@ block main
                     a.btn.btn-secondary(href="#") CONTACT
     section.packages-index
         .container
-            .swiper-container
-                .swiper-wrapper
-                    .swiper-slide
-                        .packages-wrapper
-                            .packages-image
-                                img(src="../assets/images/packages-illustration/human-resource-management.png", alt="human-resource-management")
-                            .packages-name Quản trị nguồn nhân lực
-                            .packages-desc Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số
-                            .packages-action
-                                a.btn.btn-sm.btn-outline-primary(href="#") Xem thêm
-                    .swiper-slide
-                        .packages-wrapper
-                            .packages-image
-                                img(src="../assets/images/packages-illustration/sales-management.png", alt="sales-management")
-                            .packages-name Quản trị nguồn nhân lực
-                            .packages-desc Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số
-                            .packages-action
+            .packages-swiper
+                .swiper-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            .packages-wrapper
+                                .packages-image
+                                    img(src="../assets/images/packages-illustration/human-resource-management.png", alt="human-resource-management")
+                                .packages-name.lcl.lcl-1 Quản trị nguồn nhân lực
+                                .packages-desc.lcl.lcl-2 Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số
+                                .packages-action
                                     a.btn.btn-sm.btn-outline-primary(href="#") Xem thêm
-                    .swiper-slide
-                        .packages-wrapper
-                            .packages-image
-                                img(src="../assets/images/packages-illustration/accounting-management.png", alt="accounting-management")
-                            .packages-name Quản trị nguồn nhân lực
-                            .packages-desc Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số
-                            .packages-action
-                                a.btn.btn-sm.btn-outline-primary(href="#") Xem thêm
-                    .swiper-slide
-                        .packages-wrapper
-                            .packages-image
-                                img(src="../assets/images/packages-illustration/financial-management.png", alt="financial-management")
-                            .packages-name Quản trị nguồn nhân lực
-                            .packages-desc Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số
-                            .packages-action
-                                a.btn.btn-sm.btn-outline-primary(href="#") Xem thêm
+                        .swiper-slide
+                            .packages-wrapper
+                                .packages-image
+                                    img(src="../assets/images/packages-illustration/sales-management.png", alt="sales-management")
+                                .packages-name.lcl.lcl-1 Quản trị nguồn nhân lực
+                                .packages-desc.lcl.lcl-2 Quản lý bán hàng trong thời đại số, thời đại mua hàng trực tuyến
+                                .packages-action
+                                        a.btn.btn-sm.btn-outline-primary(href="#") Xem thêm
+                        .swiper-slide
+                            .packages-wrapper
+                                .packages-image
+                                    img(src="../assets/images/packages-illustration/accounting-management.png", alt="accounting-management")
+                                .packages-name.lcl.lcl-1 Quản trị nguồn nhân lực
+                                .packages-desc.lcl.lcl-2 Hành vi khách hàng trong thời đại số thay đổi nhanh chóng, chăm sóc khách hàng...
+                                .packages-action
+                                    a.btn.btn-sm.btn-outline-primary(href="#") Xem thêm
+                        .swiper-slide
+                            .packages-wrapper
+                                .packages-image
+                                    img(src="../assets/images/packages-illustration/financial-management.png", alt="financial-management")
+                                .packages-name.lcl.lcl-1 Quản trị tài chính
+                                .packages-desc.lcl.lcl-2 Quản lý hiệu quả, tối ưu hoá việc sử dụng thiết bị, tài sản
+                                .packages-action
+                                    a.btn.btn-sm.btn-outline-primary(href="#") Xem thêm
+                        .swiper-slide
+                            .packages-wrapper
+                                .packages-image
+                                    img(src="../assets/images/packages-illustration/accounting-management.png", alt="accounting-management")
+                                .packages-name.lcl.lcl-1 Quản trị nguồn nhân lực
+                                .packages-desc.lcl.lcl-2 Hành vi khách hàng trong thời đại số thay đổi nhanh chóng, chăm sóc khách hàng...
+                                .packages-action
+                                    a.btn.btn-sm.btn-outline-primary(href="#") Xem thêm
+                        .swiper-slide
+                            .packages-wrapper
+                                .packages-image
+                                    img(src="../assets/images/packages-illustration/accounting-management.png", alt="accounting-management")
+                                .packages-name.lcl.lcl-1 Quản trị nguồn nhân lực
+                                .packages-desc.lcl.lcl-2 Hành vi khách hàng trong thời đại số thay đổi nhanh chóng, chăm sóc khách hàng...
+                                .packages-action
+                                    a.btn.btn-sm.btn-outline-primary(href="#") Xem thêm
+                .swiper-pagination
+                .swiper-button-next
+                .swiper-button-prev
+    section.why-choose-bemo-index
+        .container
+            .title-default
+                h3.sub-title-default WHY CHOOSE BEMO
+                h2.main-title-default CÁC LỢI ÍCH KHI CHỌN BEMO LÀM
+                    br
+                    | NGƯỜI BẠN ĐỒNG HÀNH
+            .why-choose-bemo-content
+                .contents
+                    .content__item
+                        .content_title_icon
+                            .icon
+                                i.far.fa-shield-check
+                            h4 Bảo mật
+                        .content_desc Đặt ưu tiên cao nhất về bảo mật dữ liệu khách hàng. Sử dụng những giải pháp tốt nhất để mang tới sự an toàn cao nhất
+                    .content__item
+                        .content_title_icon
+                            .icon
+                                i.far.fa-money-check-edit-alt
+                            h4 Chi phí
+                        .content_desc Chi phí đầu tư ban đầu, chi phí bảo trì bảo dưỡng được loại bỏ. Chi phí hàng tháng hợp lý chỉ từ 50,000vnđ/người/tháng, sử dụng theo nhu cầu thực tế của doanh nghiệp
+                    .content__item
+                        .content_title_icon
+                            .icon
+                                i.far.fa-money-check-edit-alt
+                            h4 Quy trình
+                        .content_desc Đặt ưu tiên cao nhất về bảo mật dữ liệu khách hàng. Sử dụng những giải pháp tốt nhất để mang tới sự an toàn cao nhất
+                    .content__item
+                        .content_title_icon
+                            .icon
+                                i.far.fa-money-check-edit-alt
+                            h4 Trải nghiệm
+                        .content_desc Chi phí đầu tư ban đầu, chi phí bảo trì bảo dưỡng được loại bỏ. Chi phí hàng tháng hợp lý chỉ từ 50,000vnđ/người/tháng, sử dụng theo nhu cầu thực tế của doanh nghiệp
+                    .content__item
+                        .content_title_icon
+                            .icon
+                                i.far.fa-money-check-edit-alt
+                            h4 Đôi ngũ chăm sóc
+                        .content_desc Đội ngũ chăm sóc khách hàng được trang bị chuyên môn vững vàng, sẽ nhiệt tình giải đáp các thắc mắc của doanh nghiệp 24/7
+                    .content__item
+                        .content_title_icon
+                            .icon
+                                i.far.fa-money-check-edit-alt
+                            h4 Trải nghiệm
+                        .content_desc Không ngừng phát triển, cải tiến để mang đến cho khách hàng những trải nghiệm với những công nghệ mới nhất Big Data, AI,..
+                    .content__item
+                        .content_title_icon
+                            .icon
+                                i.far.fa-money-check-edit-alt
+                            h4 Giao diện
+                        .content_desc Giao diện hiện đại, thân thiện với người dùng
+                    .content__item
+                        .content_title_icon
+                            .icon
+                                i.far.fa-money-check-edit-alt
+                            h4 Mở rộng
+                        .content_desc Có thể mở rộng dễ dàng, nhanh chóng tuỳ theo quy mô và sự phát triển doanh nghiệp của bạn
+                .image-content
+                    img(src="./assets/images/home-content/why-choose-bemo.png", alt="WHY-CHOOSE-BEMO")
+    section.solutions-index
+        .o_stripe.bg-blue-lighter
+        .container
+            .solutions-content
+                .image-content
+                    img(src="./assets/images/home-content/solutions.png", alt="SOLUTION-BEMO")
+                .contents
+                    .title-default
+                        h3.sub-title-default BEST SOLUTION
+                        h2.main-title-default Giải pháp toàn diện, chi phí hợp lý
+                    .contents
+                        ul
+                            li Bemo Cloud mang đến giải pháp công nghệ toàn diện cho chuyển đổi số doanh nghiệp với chi phí hợp lý mà tất cả các doanh nghiệp với quy mô khác nhau có thể tiếp cận.
+                            li Bemo Cloud sẽ giúp cho doanh nghiệp tự động hóa các quy trình, tránh sự chồng chéo, từ đó tăng tính kiểm soát, giảm thiểu rủi ro với tiềm năng phát triển của doanh nghiệp. Việc ứng dụng công nghệ mới Big Data, AI sẽ là bệ phóng giúp các doanh nghiệp tối ưu chi phí vận hành, tăng năng suất lao động, tăng trải nghiệm khách hàng.
+                            li Bemo Cloud ứng dụng công nghệ “Điện toán đám mây” giúp doanh nghiệp loại bỏ chi phí đầu tư ban đầu, chi phí bảo trì, nâng cấp. Các doanh nghiệp có thể sử dụng ngay với thời gian triển khai chỉ 2-4 tuần, chi phí chỉ từ 50,000vnđ/người/tháng.
+    section.screenshot-index
+        .container
+            .title-default
+                h3.sub-title-default DASHBOARD SCREENSHOT
+                h2.main-title-default GIAO DIỆN THÂN THIỆN
+                    br
+                    | TỐI ƯU HÓA TRẢI NGHIỆM NGƯỜI DÙNG
+            .contents
+                p Bemo Cloud cũng tập trung vào việc cải tiến trải nghiệm người dùng (UX - User Experience), tối ưu đa dạng trên các thiết bị nhằm làm cho nền tảng trở nên trực quan và thân thiện với người dùng hơn. Việc nâng cấp toàn diện UX được kỳ vọng sẽ giúp tăng năng suất và thúc đẩy sự tương tác của người dùng với hệ thống.
+            .screenshot-swiper
+                .swiper-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            .screenshot-image
+                                img(src="./assets/images/home-content/screenshot-01.png", alt="BEMO-SCREENSHOT")
+                        .swiper-slide
+                            .screenshot-image
+                                img(src="./assets/images/home-content/screenshot-01.png", alt="BEMO-SCREENSHOT")
+                        .swiper-slide
+                            .screenshot-image
+                                img(src="./assets/images/home-content/screenshot-01.png", alt="BEMO-SCREENSHOT")
+    section.connectivity-index
+        .container
+            .connectivity-content
+                .image-content
+                    img(src="./assets/images/home-content/connectivity.png", alt="CONNECTIVITY-BEMO")
+                .contents
+                    .title-default
+                        h3.sub-title-default Comprehensive connectivity
+                        h2.main-title-default Kết nối toàn diện và 
+                            br
+                            | tích hợp thông minh
+                    .desc
+                        p Nếu doanh nghiệp của bạn đang vận hành trên các giải pháp phần mềm riêng lẻ nhưng không tương thích với nhau, bạn phải tốn thời gian nhập dữ liệu nhiều lần và đang thiếu cái nhìn tổng quan về quản trị.
+                        p Bemo Cloud tạo ra nền tảng giải quyết mọi nhu cầu kinh doanh của doanh nghiệp tích hợp tất cả các module quản trị bằng một giải pháp duy nhất. Giúp doanh nghiệp tiết kiệm chi phí và tích hợp: doanh nghiệp không cần phải làm thêm bất cứ việc gì để phối hợp với nhiều công nghệ khác nhau.
+                        p Việc tích hợp thông minh tối ưu hiệu năng – Bemo Cloud luôn sẵn sàng hỗ trợ quý doanh nghiệp đang cần bắt đầu công cuộc chuyển đổi số. Hãy để chúng tôi trở thành đối tác đồng hành cùng doanh nghiệp của bạn trong kỷ nguyên 4.0.
+    include ../components/contact_section.pug
+    include ../components/call_to_action_01.pug

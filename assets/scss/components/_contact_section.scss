@@ -1,0 +1,116 @@
+.contact-section {
+    padding: 80px 0;
+    .list-contact-information {
+        display: grid;
+        max-width: 824px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+        margin: 24px 0;
+    }
+    .information__item {
+        display: grid;
+        grid-column-gap: 16px;
+        grid-template-columns: 42px auto;
+        background-color: rgba(
+            $color:
+                map-get(
+                    $map: $theme-colors,
+                    $key: "primary-blue-light-color-05"
+                ),
+            $alpha: 0.5
+        );
+        border: 2px solid
+            map-get($map: $theme-colors, $key: "primary-blue-light-color-05");
+        padding: 24px;
+        border-radius: 8px;
+        .icon {
+            color: #ffffff;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 42px;
+            background-color: map-get($map: $theme-colors, $key: "secondary");
+            border-radius: 50%;
+            box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+        }
+        .name {
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .value {
+            color: map-get($map: $theme-colors, $key: "txt-gray");
+            font-size: 0.875rem;
+        }
+    }
+    .form-wrapper {
+        max-width: 910px;
+        width: 100%;
+        margin: 0 auto;
+        [class*="col-"] {
+            margin-bottom: 24px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .action-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-gap: 24px;
+        }
+        .btn-submit {
+            color: #ffffff;
+            background-color: map-get(
+                $map: $theme-colors,
+                $key: "primary-blue-light-color-02"
+            );
+            border-color: map-get(
+                $map: $theme-colors,
+                $key: "primary-blue-light-color-02"
+            );
+            padding-right: 30px;
+            padding-left: 30px;
+            &:hover {
+                background-color: darken(
+                    $color:
+                        map-get(
+                            $map: $theme-colors,
+                            $key: "primary-blue-light-color-02"
+                        ),
+                    $amount: 5%
+                );
+                border-color: darken(
+                    $color:
+                        map-get(
+                            $map: $theme-colors,
+                            $key: "primary-blue-light-color-02"
+                        ),
+                    $amount: 5%
+                );
+            }
+            &:focus {
+                box-shadow: 0 0 0 0.25rem
+                    rgba(
+                        $color:
+                            map-get(
+                                $map: $theme-colors,
+                                $key: "primary-blue-light-color-02"
+                            ),
+                        $alpha: 0.2
+                    );
+            }
+        }
+    }
+    .contact-form-wrapper {
+        padding: 32px 16px 48px 16px;
+        background-color: #f3f4f7;
+        border-radius: 8px;
+        .title-contact-form-wrapper {
+            color: map-get($map: $theme-colors, $key: "primary");
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+    }
+}
