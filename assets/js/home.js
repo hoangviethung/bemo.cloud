@@ -20,12 +20,13 @@
             const swiperPackages = new Swiper(
                 ".packages-swiper .swiper-container",
                 {
-                    slidesPerView: 4,
+                    slidesPerView: 1,
                     speed: 1000,
-                    spaceBetween: 22,
-                    autoplay: {
-                        delay: 2000,
-                    },
+
+                    spaceBetween: 8,
+                    // autoplay: {
+                    //     delay: 2000,
+                    // },
                     navigation: {
                         nextEl: ".packages-swiper .swiper-button-next",
                         prevEl: ".packages-swiper .swiper-button-prev",
@@ -34,7 +35,15 @@
                         el: ".packages-swiper .swiper-pagination",
                         dynamicBullets: true,
                     },
-                    breakpoints: {},
+                    breakpoints: {
+                        600: {
+                            slidesPerView: 2,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                        },
+                        1200: { spaceBetween: 22, slidesPerView: 4 },
+                    },
                 },
             );
         },
