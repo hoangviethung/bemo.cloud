@@ -24,6 +24,9 @@
         display: flex;
         align-items: center;
         height: 100%;
+        @media (max-width: 1024.98px) {
+            justify-content: space-between;
+        }
     }
     .main-menu {
         display: inline-flex;
@@ -31,6 +34,7 @@
         align-items: center;
         height: 100%;
         margin-left: 88px;
+        margin-right: 16px;
         a {
             font-size: 1rem;
             font-weight: 700;
@@ -40,10 +44,20 @@
             &:hover {
                 opacity: 0.8;
             }
+            @media (max-width: 1024.98px) {
+                color: map-get($map: $theme-colors, $key: "txt-body");
+            }
         }
         li {
             + li {
                 margin-left: 44px;
+                @media (max-width: 1199.98px) {
+                    margin-left: 32px;
+                }
+                @media (max-width: 1024.98px) {
+                    margin-left: 0;
+                    margin-top: 32px;
+                }
             }
             &.active {
                 a {
@@ -51,11 +65,49 @@
                 }
             }
         }
+        @media (max-width: 1199.98px) {
+            margin-left: 44px;
+        }
+        @media (max-width: 1024.98px) {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin-left: 0;
+            z-index: 500;
+            background-color: #ffffff;
+            max-width: 350px;
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 32px;
+            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            transform: translateX(-100%);
+            &.show {
+                transform: translateX(0);
+                transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            }
+            @media (max-width: 575.98px) {
+                max-width: 250px;
+            }
+        }
+    }
+    .languages-mobile {
+        display: none;
+        @media (max-width: 1024.98px) {
+            display: block;
+        }
+    }
+    .languages-desktop {
+        margin-left: auto;
+        @media (max-width: 1024.98px) {
+            display: none;
+        }
     }
     .languages {
         display: flex;
         align-items: center;
-        margin-left: auto;
         .dropdown-menu {
             .language-name {
                 color: map-get($map: $theme-colors, $key: "txt-body");
@@ -77,9 +129,15 @@
             font-family: map-get($map: $theme-fonts, $key: "icons");
             font-size: 1rem;
             margin-left: 8px;
+            @media (max-width: 1024.98px) {
+                color: map-get($map: $theme-colors, $key: "txt-body");
+            }
         }
     }
     .language-icon {
+        flex: 0 0 24px;
+        max-width: 24px;
+        height: 24px;
         border-radius: 50%;
         overflow: hidden;
         img {
@@ -94,5 +152,17 @@
         margin-left: 8px;
         font-weight: 700;
         font-size: 1rem;
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        @media (max-width: 1024.98px) {
+            color: map-get($map: $theme-colors, $key: "txt-body");
+        }
+    }
+    .hamburger_icon {
+        display: none;
+        @media (max-width: 1024.98px) {
+            display: inline-flex;
+        }
     }
 }

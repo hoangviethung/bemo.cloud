@@ -14,6 +14,7 @@
         methods: function (e) {
             imJs.initSliderPackages();
             imJs.initSliderScreenShot();
+            imJs.toggleMenuMobile();
         },
         initSliderPackages() {
             const swiperPackages = new Swiper(
@@ -50,6 +51,12 @@
                     loop: true,
                 },
             );
+        },
+        toggleMenuMobile() {
+            $(".header-default .hamburger_icon").on("click", function (e) {
+                $(".header-default .main-menu").toggleClass("show");
+                $("body").toggleClass("no-scroll");
+            });
         },
     };
     imJs.m();
