@@ -1,11 +1,18 @@
 .header-default {
     height: 80px;
-    &.header--fixed {
+    &.header--sticky {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         z-index: 500;
+        transition: 0.3s all ease-in-out;
+        &.sticky {
+            background-color: map-get(
+                $map: $theme-colors,
+                $key: "primary-dark-01"
+            );
+        }
     }
     .logo {
         height: 100%;
