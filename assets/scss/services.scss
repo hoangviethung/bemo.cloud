@@ -42,6 +42,10 @@
                 font-size: 0.875rem;
                 color: map-get($map: $theme-colors, $key: "txt-gray");
             }
+            .btn {
+                width: fit-content;
+                margin: 16px auto 0;
+            }
             @media (max-width: 767.98px) {
                 border-radius: 8px 8px 0 0;
                 padding: 16px;
@@ -89,15 +93,31 @@
                     $key: "primary-blue-light-color-06"
                 );
                 border-radius: 50%;
+                transition: 0.3s background-color ease-in-out;
             }
             .name {
                 color: map-get($map: $theme-colors, $key: "primary");
                 font-size: 1rem;
                 margin-bottom: 4px;
+                transition: 0.3s color ease-in-out;
             }
             .desc {
                 color: map-get($map: $theme-colors, $key: "txt-gray");
                 font-size: 0.875rem;
+            }
+            &:hover {
+                .icon {
+                    background-color: map-get(
+                        $map: $theme-colors,
+                        $key: "primary-blue-light-color-05"
+                    );
+                }
+                .name {
+                    color: map-get(
+                        $map: $theme-colors,
+                        $key: "primary-blue-medium-color-02"
+                    );
+                }
             }
         }
         @media (max-width: 767.98px) {
