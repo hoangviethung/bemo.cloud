@@ -1,8 +1,8 @@
 extends ../layouts/layout
 
-block var
-    - bodyClass = "index-page"
-    - pageTitle = "Bemo Cloud | Services"
+block params
+    - class_body = "index-page"
+    - title_page = "Bemo Cloud | Services"
     - url_bg_banner_title = "../assets/images/banner-title/services.png"
     - heading_banner_title = "DỊCH VỤ"
     - desc_banner_title = "Sự hài lòng của Khách hàng là mục tiêu cao nhất của chúng tôi"
@@ -10,7 +10,7 @@ block css
     link(rel="stylesheet", href="./assets/css/services.css")
 block js
 block main
-    include ../components/banner_title
+    include ../components/banner-title
     section.services-section
         .container
             .services

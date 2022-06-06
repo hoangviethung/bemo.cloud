@@ -1,9 +1,8 @@
-.hamburger_icon {
+.hamburger-icon {
+    display: inline-flex;
     background-color: transparent;
     border: none;
-    display: none;
     padding: 0;
-    display: inline-flex;
     .line {
         fill: none;
         stroke: #ffffff;

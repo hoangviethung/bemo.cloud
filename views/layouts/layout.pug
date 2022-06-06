@@ -1,4 +1,4 @@
-block var
+block params
 
 <!DOCTYPE html>
 html(lang="en")
@@ -12,8 +12,8 @@ html(lang="en")
         // *** FAVICON *** //
         link(rel="shortcut icon", href="./assets/images/favicon.png", type="image/x-icon")
         // *** TITLE *** //
-        title #{pageTitle}
-    body(class=`${bodyClass}`)
+        title #{title_page}
+    body(class=`${class_body}`)
         // *** HEADER *** //
         block header
             include header
@@ -24,8 +24,8 @@ html(lang="en")
         block footer
             include footer
         // *** FOOTER *** //
-        block back_to_top
-            include back_to_top
+        block back-to-top
+            include back-to-top
         // *** JS *** //
         include js
         // *** JS ON SCREEN *** //

@@ -1,8 +1,8 @@
 extends ../layouts/layout
 
-block var
-    - bodyClass = "index-page"
-    - pageTitle = "Bemo Cloud | Home"
+block params
+    - class_body = "index-page"
+    - title_page = "Bemo Cloud | Home"
 block css
     link(rel="stylesheet", href="./assets/css/home.css")
 block js
@@ -184,5 +184,5 @@ block main
                         p Nếu doanh nghiệp của bạn đang vận hành trên các giải pháp phần mềm riêng lẻ nhưng không tương thích với nhau, bạn phải tốn thời gian nhập dữ liệu nhiều lần và đang thiếu cái nhìn tổng quan về quản trị.
                         p Bemo Cloud tạo ra nền tảng giải quyết mọi nhu cầu kinh doanh của doanh nghiệp tích hợp tất cả các module quản trị bằng một giải pháp duy nhất. Giúp doanh nghiệp tiết kiệm chi phí và tích hợp: doanh nghiệp không cần phải làm thêm bất cứ việc gì để phối hợp với nhiều công nghệ khác nhau.
                         p Việc tích hợp thông minh tối ưu hiệu năng – Bemo Cloud luôn sẵn sàng hỗ trợ quý doanh nghiệp đang cần bắt đầu công cuộc chuyển đổi số. Hãy để chúng tôi trở thành đối tác đồng hành cùng doanh nghiệp của bạn trong kỷ nguyên 4.0.
-    include ../components/contact_section.pug
-    include ../components/call_to_action_01.pug
+    include ../components/contact-section.pug
+    include ../components/call-to-action-01.pug

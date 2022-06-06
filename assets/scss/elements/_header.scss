@@ -159,7 +159,7 @@
             color: map-get($map: $theme-colors, $key: "txt-body");
         }
     }
-    .hamburger_icon {
+    .hamburger-icon {
         display: none;
         @media (max-width: 1024.98px) {
             display: inline-flex;
