@@ -139,9 +139,7 @@ sup {
 }
 
 a {
-    color: map-get($map: $theme-colors, $key: "primary");
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
 }
 
 a:not([href]):not([class]) {
