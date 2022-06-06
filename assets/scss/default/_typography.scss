@@ -20,6 +20,10 @@
                 $key: "primary-blue-light-color-04"
             );
             margin-bottom: 4px;
+            @media (max-width: 575.98px) {
+                height: 2px;
+                width: 32px;
+            }
         }
         &:after {
             content: "";
@@ -28,12 +32,24 @@
         &:before {
             margin-right: 8px;
         }
+        @media (max-width: 575.98px) {
+            font-size: 0.875rem;
+        }
     }
     .main-title-default {
         font-size: 2rem;
         line-height: 1.4;
         font-weight: 700;
         color: map-get($map: $theme-colors, $key: "primary");
+        @media (max-width: 767.98px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 575.98px) {
+            font-size: 1.125rem;
+            br {
+                display: none;
+            }
+        }
     }
     &--center {
         .sub-title-default {

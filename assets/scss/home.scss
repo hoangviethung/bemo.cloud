@@ -138,6 +138,9 @@
             background: map-get($map: $theme-colors, $key: "primary");
         }
     }
+    @media (max-width: 575.98px) {
+        margin-top: -48px;
+    }
 }
 
 .why-choose-bemo-index {
@@ -149,12 +152,23 @@
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 32px;
         grid-row-gap: 24px;
+        @media (max-width: 1024.98px) {
+            order: 2;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 8px;
+        }
     }
     .why-choose-bemo-content {
         display: grid;
         align-items: center;
         grid-template-columns: 58.3333333333% 41.6666666667%;
         margin-top: 32px;
+        @media (max-width: 1024.98px) {
+            grid-template-columns: 1fr;
+        }
+        @media (max-width: 575.98px) {
+            margin-top: 16px;
+        }
     }
     .content_title_icon {
         display: flex;
@@ -189,6 +203,15 @@
             box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
             border-radius: 10px;
         }
+        @media (max-width: 1024.98px) {
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 24px;
+            order: 1;
+        }
+    }
+    @media (max-width: 575.98px) {
+        padding-top: 40px;
     }
 }
 
@@ -202,12 +225,22 @@
         align-items: center;
         grid-template-columns: 1fr 1fr;
         margin-top: 32px;
+        @media (max-width: 1024.98px) {
+            grid-template-columns: 1fr;
+            order: 2;
+            margin-top: 0;
+        }
     }
     .image-content {
         margin-left: -50%;
         img {
             display: block;
             margin-left: auto;
+        }
+        @media (max-width: 1024.98px) {
+            margin-left: 0;
+            margin-top: 24px;
+            order: 1;
         }
     }
     .contents {
@@ -226,6 +259,10 @@
             }
         }
     }
+    @media (max-width: 575.98px) {
+        padding-top: 40px;
+        margin-top: 24px;
+    }
 }
 
 .screenshot-index {
@@ -234,21 +271,36 @@
     .contents {
         margin-top: 16px;
         max-width: 58.3333333333%;
+        @media (max-width: 1024.98px) {
+            max-width: 100%;
+        }
     }
     .screenshot-swiper {
         max-width: 83.3333333333%;
         margin-top: 16px;
         .swiper-container {
             overflow: visible;
+            @media (max-width: 575.98px) {
+                overflow: hidden;
+            }
         }
         .swiper-slide {
             transition: 0.3s transform ease-in-out, 1.6s opacity ease-in-out;
             &:not(.swiper-slide-active) {
                 transform: scale(0.9);
+                @media (max-width: 575.98px) {
+                    transform: unset;
+                }
             }
             &:not(.swiper-slide-next):not(.swiper-slide-active) {
                 opacity: 0;
+                @media (max-width: 575.98px) {
+                    opacity: 1;
+                }
             }
+        }
+        @media (max-width: 575.98px) {
+            max-width: 100%;
         }
     }
     .screenshot-image {
@@ -256,6 +308,12 @@
             box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
             border-radius: 10px;
         }
+        @media (max-width: 575.98px) {
+            margin: 8px;
+        }
+    }
+    @media (max-width: 575.98px) {
+        padding-top: 40px;
     }
 }
 
@@ -266,12 +324,29 @@
         $map: $theme-colors,
         $key: "primary-blue-light-color-06"
     );
-
     .connectivity-content {
         display: grid;
         align-items: center;
         grid-column-gap: 48px;
         grid-template-columns: 1fr 1fr;
+        @media (max-width: 1024.98px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .image-content {
+        @media (max-width: 1024.98px) {
+            order: 2;
+            margin-top: 32px;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    .contents {
+        @media (max-width: 1024.98px) {
+            order: 1;
+        }
     }
     .desc {
         margin-top: 24px;
@@ -280,5 +355,9 @@
                 margin-top: 8px;
             }
         }
+    }
+    @media (max-width: 575.98px) {
+        margin-top: 40px;
+        padding: 40px 0;
     }
 }

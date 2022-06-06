@@ -26,6 +26,9 @@ body {
             z-index: 300;
         }
     }
+    @media (max-width: 575.98px) {
+        font-size: 0.875rem;
+    }
 }
 
 figure {

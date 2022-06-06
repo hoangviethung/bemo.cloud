@@ -40,4 +40,7 @@
         $map: $theme-colors,
         $key: "primary-blue-light-color-06"
     );
+    @media (max-width: 1024.98px) {
+        transform: skewY(6deg);
+    }
 }
