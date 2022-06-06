@@ -13,6 +13,7 @@
         },
         methods: function (e) {
             imJs.stickyHeader();
+            imJs.toggleMenuMobile();
         },
         stickyHeader: function (e) {
             $(window).scroll(function () {
@@ -21,6 +22,12 @@
                 } else {
                     $(".header--sticky").removeClass("sticky");
                 }
+            });
+        },
+        toggleMenuMobile() {
+            $(".header-default .hamburger_icon").on("click", function (e) {
+                $(".header-default .main-menu").toggleClass("show");
+                $("body").toggleClass("no-scroll");
             });
         },
         backToTopInit: function () {

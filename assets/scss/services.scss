@@ -1,0 +1,110 @@
+@import "../scss/default/varivables.scss";
+
+.services-section {
+    padding: 56px 0;
+    .services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 32px;
+    }
+    .service__item {
+        display: grid;
+        grid-template-columns: 33.3333333333% auto;
+        .item__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: map-get(
+                $map: $theme-colors,
+                $key: "primary-blue-light-color-05"
+            );
+            padding: 28px 32px;
+            border-radius: 8px 0 0 8px;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            h4,
+            p {
+                text-align: center;
+            }
+            h4 {
+                color: map-get($map: $theme-colors, $key: "primary");
+                font-size: 1rem;
+                margin-bottom: 4px;
+                margin-top: 16px;
+                text-transform: uppercase;
+                @media (max-width: 767.98px) {
+                    font-size: 0.875rem;
+                }
+            }
+            p {
+                font-size: 0.875rem;
+                color: map-get($map: $theme-colors, $key: "txt-gray");
+            }
+            @media (max-width: 767.98px) {
+                border-radius: 8px 8px 0 0;
+                padding: 16px;
+            }
+        }
+        .item__right {
+            border: 2px solid
+                map-get(
+                    $map: $theme-colors,
+                    $key: "primary-blue-light-color-05"
+                );
+            border-radius: 0 8px 8px 0;
+            padding: 32px;
+            @media (max-width: 767.98px) {
+                border-radius: 0 0 8px 8px;
+                padding: 16px;
+            }
+        }
+        .modules {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 32px;
+            grid-row-gap: 24px;
+            @media (max-width: 1024.98px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        .module__item {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 44px auto;
+            grid-column-gap: 16px;
+            .icon {
+                color: map-get(
+                    $map: $theme-colors,
+                    $key: "primary-blue-medium-color-02"
+                );
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 44px;
+                background-color: map-get(
+                    $map: $theme-colors,
+                    $key: "primary-blue-light-color-06"
+                );
+                border-radius: 50%;
+            }
+            .name {
+                color: map-get($map: $theme-colors, $key: "primary");
+                font-size: 1rem;
+                margin-bottom: 4px;
+            }
+            .desc {
+                color: map-get($map: $theme-colors, $key: "txt-gray");
+                font-size: 0.875rem;
+            }
+        }
+        @media (max-width: 767.98px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    @media (max-width: 767.98px) {
+        padding: 32px 0;
+    }
+}
