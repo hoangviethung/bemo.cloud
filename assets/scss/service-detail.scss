@@ -35,9 +35,11 @@
             margin: 0 auto;
         }
     }
-    [class*="col-"] {
-        + [class*="col-"] {
-            margin-top: 32px;
+    @media (max-width: 1024.98px) {
+        [class*="col-"] {
+            + [class*="col-"] {
+                margin-top: 32px;
+            }
         }
     }
     @media (max-width: 575.98px) {
