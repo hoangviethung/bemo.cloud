@@ -3,7 +3,6 @@
     min-height: 450px;
     padding: 40px 0;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     background-position: center center;
     &:after {
@@ -37,5 +36,8 @@
     }
     @media (max-width: 1024.98px) {
         min-height: 350px;
+    }
+    @media (min-width: 1025px) {
+        background-attachment: fixed;
     }
 }
