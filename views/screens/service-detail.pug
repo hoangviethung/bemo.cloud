@@ -1,0 +1,19 @@
+extends ../layouts/layout
+
+block params
+    - class_body = "index-page"
+    - title_page = "Bemo Cloud | Services"
+    - url_bg_banner_title = "../assets/images/banner-title/hrm.png"
+    - heading_banner_title = "Bemo - Quản trị nguồn nhân lực"
+    - desc_banner_title = "Phát triển nhân sự toàn diện trong kỷ nguyên số"
+block css
+    link(rel="stylesheet", href="./assets/css/services.css")
+block js
+block main
+    include ../components/banner-title
+    section.service-dt-summary
+        .container
+            .row
+                .col-md-4
+                    .summary__item
+                        .image

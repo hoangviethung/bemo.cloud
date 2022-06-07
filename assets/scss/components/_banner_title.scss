@@ -4,6 +4,8 @@
     padding: 40px 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
     &:after {
         content: "";
         position: absolute;
@@ -35,7 +37,5 @@
     }
     @media (max-width: 1024.98px) {
         min-height: 350px;
-        background-size: cover;
-        background-position: center center;
     }
 }
