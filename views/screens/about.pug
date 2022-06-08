@@ -1,0 +1,50 @@
+extends ../layouts/layout
+
+block params
+    - class_body = "about-page"
+    - title_page = "Bemo Cloud | About"
+    - url_bg_banner_title = "../assets/images/banner-title/about.png"
+    - heading_banner_title = "VỀ CHÚNG TÔI"
+    - desc_banner_title = "Đồng hành cùng sự phát triển của doanh nghiệp"
+block css
+    link(rel="stylesheet", href="./assets/css/about.css")
+block js
+block main
+    include ../components/banner-title
+    include ../components/why-choose-us-section
+    section.vision-mission-seciton
+        .container
+            .vision-mission-content
+                .block-item
+                    .content-wrapper
+                        .content__heading
+                            .icon
+                                i.far.fa-eye
+                            h3 Tầm nhìn
+                        .content__decsc Bemo Cloud phấn đấu trở thành giải pháp công nghệ Chuyển đổi số được nhiều doanh nghiệp Việt Nam và thế giới biết tới trong 2 năm tới.
+                .block-item
+                    .content__image
+                        img(src="../assets/images/about/vision.png", alt="vision")
+                .block-item
+                    .content__image
+                        img(src="../assets/images/about/mission.png", alt="mission")
+                .block-item
+                    .content-wrapper
+                        .content__heading
+                            .icon
+                                i.fas.fa-bullseye-arrow
+                            h3 Sứ mệnh
+                        .content__decsc Đồng hành với sự phát triển của doanh nghiệp, cùng doanh nghiệp giải quyết các bài toán về quản trị nguồn lực, tối ưu chi phí,.. nhằm tận dụng cơ hội của cuộc Cách mạng công nghệ 4.0
+    section.core-values-section
+        .container
+            .core-values-content
+                .contents
+                    .title-default
+                        h3.sub-title-default BEST SOLUTION
+                        h2.main-title-default Giải pháp toàn diện, chi phí hợp lý
+                    ul
+                        li Bemo Cloud mang đến giải pháp công nghệ toàn diện cho chuyển đổi số doanh nghiệp với chi phí hợp lý mà tất cả các doanh nghiệp với quy mô khác nhau có thể tiếp cận.
+                        li Bemo Cloud sẽ giúp cho doanh nghiệp tự động hóa các quy trình, tránh sự chồng chéo, từ đó tăng tính kiểm soát, giảm thiểu rủi ro với tiềm năng phát triển của doanh nghiệp. Việc ứng dụng công nghệ mới Big Data, AI sẽ là bệ phóng giúp các doanh nghiệp tối ưu chi phí vận hành, tăng năng suất lao động, tăng trải nghiệm khách hàng.
+                        li Bemo Cloud ứng dụng công nghệ “Điện toán đám mây” giúp doanh nghiệp loại bỏ chi phí đầu tư ban đầu, chi phí bảo trì, nâng cấp. Các doanh nghiệp có thể sử dụng ngay với thời gian triển khai chỉ 2-4 tuần, chi phí chỉ từ 50,000vnđ/người/tháng.
+                .image
+                    img(src="../assets/images/about/core-value.png", alt="core-value")

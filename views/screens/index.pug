@@ -74,65 +74,7 @@ block main
                 .swiper-pagination
                 .swiper-button-next
                 .swiper-button-prev
-    section.why-choose-bemo-section
-        .container
-            .title-default
-                h3.sub-title-default WHY CHOOSE BEMO
-                h2.main-title-default CÁC LỢI ÍCH KHI CHỌN BEMO LÀM
-                    br
-                    | NGƯỜI BẠN ĐỒNG HÀNH
-            .why-choose-bemo-content
-                .contents
-                    .content__item
-                        .content_title_icon
-                            .icon
-                                i.far.fa-shield-check
-                            h4 Bảo mật
-                        .content_desc Đặt ưu tiên cao nhất về bảo mật dữ liệu khách hàng. Sử dụng những giải pháp tốt nhất để mang tới sự an toàn cao nhất
-                    .content__item
-                        .content_title_icon
-                            .icon
-                                i.far.fa-money-check-edit-alt
-                            h4 Chi phí
-                        .content_desc Chi phí đầu tư ban đầu, chi phí bảo trì bảo dưỡng được loại bỏ. Chi phí hàng tháng hợp lý chỉ từ 50,000vnđ/người/tháng, sử dụng theo nhu cầu thực tế của doanh nghiệp
-                    .content__item
-                        .content_title_icon
-                            .icon
-                                i.far.fa-money-check-edit-alt
-                            h4 Quy trình
-                        .content_desc Đặt ưu tiên cao nhất về bảo mật dữ liệu khách hàng. Sử dụng những giải pháp tốt nhất để mang tới sự an toàn cao nhất
-                    .content__item
-                        .content_title_icon
-                            .icon
-                                i.far.fa-money-check-edit-alt
-                            h4 Trải nghiệm
-                        .content_desc Chi phí đầu tư ban đầu, chi phí bảo trì bảo dưỡng được loại bỏ. Chi phí hàng tháng hợp lý chỉ từ 50,000vnđ/người/tháng, sử dụng theo nhu cầu thực tế của doanh nghiệp
-                    .content__item
-                        .content_title_icon
-                            .icon
-                                i.far.fa-money-check-edit-alt
-                            h4 Đôi ngũ chăm sóc
-                        .content_desc Đội ngũ chăm sóc khách hàng được trang bị chuyên môn vững vàng, sẽ nhiệt tình giải đáp các thắc mắc của doanh nghiệp 24/7
-                    .content__item
-                        .content_title_icon
-                            .icon
-                                i.far.fa-money-check-edit-alt
-                            h4 Trải nghiệm
-                        .content_desc Không ngừng phát triển, cải tiến để mang đến cho khách hàng những trải nghiệm với những công nghệ mới nhất Big Data, AI,..
-                    .content__item
-                        .content_title_icon
-                            .icon
-                                i.far.fa-money-check-edit-alt
-                            h4 Giao diện
-                        .content_desc Giao diện hiện đại, thân thiện với người dùng
-                    .content__item
-                        .content_title_icon
-                            .icon
-                                i.far.fa-money-check-edit-alt
-                            h4 Mở rộng
-                        .content_desc Có thể mở rộng dễ dàng, nhanh chóng tuỳ theo quy mô và sự phát triển doanh nghiệp của bạn
-                .image-content
-                    img(src="./assets/images/home-content/why-choose-bemo.png", alt="WHY-CHOOSE-BEMO")
+    include ../components/why-choose-us-section
     section.solutions-section
         .o_stripe.bg-blue-lighter
         .container
@@ -143,11 +85,10 @@ block main
                     .title-default
                         h3.sub-title-default BEST SOLUTION
                         h2.main-title-default Giải pháp toàn diện, chi phí hợp lý
-                    .contents
-                        ul
-                            li Bemo Cloud mang đến giải pháp công nghệ toàn diện cho chuyển đổi số doanh nghiệp với chi phí hợp lý mà tất cả các doanh nghiệp với quy mô khác nhau có thể tiếp cận.
-                            li Bemo Cloud sẽ giúp cho doanh nghiệp tự động hóa các quy trình, tránh sự chồng chéo, từ đó tăng tính kiểm soát, giảm thiểu rủi ro với tiềm năng phát triển của doanh nghiệp. Việc ứng dụng công nghệ mới Big Data, AI sẽ là bệ phóng giúp các doanh nghiệp tối ưu chi phí vận hành, tăng năng suất lao động, tăng trải nghiệm khách hàng.
-                            li Bemo Cloud ứng dụng công nghệ “Điện toán đám mây” giúp doanh nghiệp loại bỏ chi phí đầu tư ban đầu, chi phí bảo trì, nâng cấp. Các doanh nghiệp có thể sử dụng ngay với thời gian triển khai chỉ 2-4 tuần, chi phí chỉ từ 50,000vnđ/người/tháng.
+                    ul
+                        li Bemo Cloud mang đến giải pháp công nghệ toàn diện cho chuyển đổi số doanh nghiệp với chi phí hợp lý mà tất cả các doanh nghiệp với quy mô khác nhau có thể tiếp cận.
+                        li Bemo Cloud sẽ giúp cho doanh nghiệp tự động hóa các quy trình, tránh sự chồng chéo, từ đó tăng tính kiểm soát, giảm thiểu rủi ro với tiềm năng phát triển của doanh nghiệp. Việc ứng dụng công nghệ mới Big Data, AI sẽ là bệ phóng giúp các doanh nghiệp tối ưu chi phí vận hành, tăng năng suất lao động, tăng trải nghiệm khách hàng.
+                        li Bemo Cloud ứng dụng công nghệ “Điện toán đám mây” giúp doanh nghiệp loại bỏ chi phí đầu tư ban đầu, chi phí bảo trì, nâng cấp. Các doanh nghiệp có thể sử dụng ngay với thời gian triển khai chỉ 2-4 tuần, chi phí chỉ từ 50,000vnđ/người/tháng.
     section.screenshot-section
         .container
             .title-default

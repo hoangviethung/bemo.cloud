@@ -1,0 +1,72 @@
+.why-choose-bemo-section {
+    position: relative;
+    padding-top: 80px;
+    overflow: hidden;
+    .contents {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 32px;
+        grid-row-gap: 24px;
+        @media (max-width: 1024.98px) {
+            order: 2;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 16px;
+        }
+    }
+    .why-choose-bemo-content {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 58.3333333333% 41.6666666667%;
+        margin-top: 32px;
+        @media (max-width: 1024.98px) {
+            grid-template-columns: 1fr;
+        }
+        @media (max-width: 575.98px) {
+            margin-top: 16px;
+        }
+    }
+    .content_title_icon {
+        display: flex;
+        align-items: center;
+        .icon {
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            background-color: map-get(
+                $map: $theme-colors,
+                $key: "primary-blue-light-color-05"
+            );
+            border-radius: 8px;
+        }
+        h4 {
+            color: map-get($map: $theme-colors, $key: "primary");
+            font-size: 1rem;
+            font-weight: 700;
+            margin-left: 16px;
+        }
+    }
+    .content_desc {
+        font-size: 0.875rem;
+        margin-top: 8px;
+    }
+    .image-content {
+        margin-right: -120%;
+        margin-left: 56px;
+        img {
+            box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+            border-radius: 10px;
+        }
+        @media (max-width: 1024.98px) {
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 24px;
+            order: 1;
+        }
+    }
+    @media (max-width: 575.98px) {
+        padding-top: 40px;
+    }
+}
