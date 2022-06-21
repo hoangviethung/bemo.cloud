@@ -1,0 +1,62 @@
+@import "../scss/default/varivables.scss";
+
+.offices-company {
+    padding-bottom: 80px;
+    .offices-list {
+        margin-top: 56px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 32px;
+        @media (max-width: 1024.98px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 767.98px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .office__item {
+        h4 {
+            text-transform: uppercase;
+            color: map-get($map: $theme-colors, $key: "primary");
+            &:before {
+                font-size: 1.125rem;
+                content: "\f3c5";
+                color: map-get($map: $theme-colors, $key: "secondary");
+                font-family: map-get($map: $theme-fonts, $key: "icons");
+                margin-right: 8px;
+            }
+        }
+        .office__desc {
+            font-size: 0.875rem;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            li {
+                &.address {
+                    &:before {
+                        content: "\f1ad";
+                    }
+                }
+                &.phone-number {
+                    &:before {
+                        content: "\f095";
+                    }
+                }
+                &.time-work {
+                    &:before {
+                        content: "\f017";
+                    }
+                }
+                &:before {
+                    margin-right: 4px;
+                    font-family: map-get($map: $theme-fonts, $key: "icons");
+                }
+                + li {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+    @media (max-width: 575.98px) {
+        padding-bottom: 40px;
+    }
+}
