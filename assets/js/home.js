@@ -21,11 +21,10 @@
                 {
                     slidesPerView: 1,
                     speed: 1000,
-
                     spaceBetween: 8,
-                    // autoplay: {
-                    //     delay: 2000,
-                    // },
+                    autoplay: {
+                        delay: 2000,
+                    },
                     navigation: {
                         nextEl: ".packages-swiper .swiper-button-next",
                         prevEl: ".packages-swiper .swiper-button-prev",

@@ -9,6 +9,7 @@ block params
 block css
     link(rel="stylesheet", href="./assets/css/about.css")
 block js
+    script(src="./assets/js/about.js")
 block main
     include ../components/banner-title
     include ../components/why-choose-us-section
@@ -21,7 +22,7 @@ block main
                             .icon
                                 i.far.fa-eye
                             h3 Tầm nhìn
-                        .content__decsc Bemo Cloud phấn đấu trở thành giải pháp công nghệ Chuyển đổi số được nhiều doanh nghiệp Việt Nam và thế giới biết tới trong 2 năm tới.
+                        .content__decsc.lcl.lcl-4 Bemo Cloud phấn đấu trở thành giải pháp công nghệ Chuyển đổi số được nhiều doanh nghiệp Việt Nam và thế giới biết tới trong 2 năm tới.
                 .block-item
                     .content__image
                         img(src="../assets/images/about/vision.png", alt="vision")
@@ -34,7 +35,7 @@ block main
                             .icon
                                 i.fas.fa-bullseye-arrow
                             h3 Sứ mệnh
-                        .content__decsc Đồng hành với sự phát triển của doanh nghiệp, cùng doanh nghiệp giải quyết các bài toán về quản trị nguồn lực, tối ưu chi phí,.. nhằm tận dụng cơ hội của cuộc Cách mạng công nghệ 4.0
+                        .content__decsc.lcl.lcl-4 Đồng hành với sự phát triển của doanh nghiệp, cùng doanh nghiệp giải quyết các bài toán về quản trị nguồn lực, tối ưu chi phí,.. nhằm tận dụng cơ hội của cuộc Cách mạng công nghệ 4.0
     section.core-values-section
         .container
             .core-values-content
@@ -48,3 +49,75 @@ block main
                         li Bemo Cloud ứng dụng công nghệ “Điện toán đám mây” giúp doanh nghiệp loại bỏ chi phí đầu tư ban đầu, chi phí bảo trì, nâng cấp. Các doanh nghiệp có thể sử dụng ngay với thời gian triển khai chỉ 2-4 tuần, chi phí chỉ từ 50,000vnđ/người/tháng.
                 .image
                     img(src="../assets/images/about/core-value.png", alt="core-value")
+    include ../components/call-to-action-02.pug
+    section.members-section
+        .container
+            .title-default.title-default--center
+                h3.sub-title-default Bemo MEMBERS
+                h2.main-title-default BEMO - đội ngũ cốt lõi
+            .members-swiper
+                .swiper-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            a.member(href="https://www.linkedin.com/feed/" target="_blank")
+                                .member__image
+                                    img(src="../assets/images/about/quan-nguyen.jpg", alt="quan-nguyen")
+                                .member__desc
+                                    h4.lcl.lcl-1 NGUYỄN TRUNG QUÂN
+                                    p.lcl.lcl-1 Giám đốc sản phẩm
+                        .swiper-slide
+                            a.member(href="https://www.linkedin.com/feed/" target="_blank")
+                                .member__image
+                                    img(src="../assets/images/about/hang-nguyen.jpg", alt="hang-nguyen")
+                                .member__desc
+                                    h4.lcl.lcl-1 NGUYỄN THỊ THU HẰNG
+                                    p.lcl.lcl-1 Phó giám đốc sản phẩm
+                        .swiper-slide
+                            a.member(href="https://www.linkedin.com/feed/" target="_blank")
+                                .member__image
+                                    img(src="../assets/images/about/tam-nguyen.jpg", alt="tam-nguyen")
+                                .member__desc
+                                    h4.lcl.lcl-1 NGUYỄN THỊ PHƯƠNG TÂM
+                                    p.lcl.lcl-1 Quản lý dự án
+                        .swiper-slide
+                            a.member(href="https://www.linkedin.com/feed/" target="_blank")
+                                .member__image
+                                    img(src="../assets/images/about/phat-le.jpg", alt="phat-le")
+                                .member__desc
+                                    h4.lcl.lcl-1 LÊ NGỌC PHÁT
+                                    p.lcl.lcl-1 Trưởng nhóm kỹ thuật
+                        .swiper-slide
+                            a.member(href="https://www.linkedin.com/feed/" target="_blank")
+                                .member__image
+                                    img(src="../assets/images/about/hung-hoang.jpg", alt="hung-hoang")
+                                .member__desc
+                                    h4.lcl.lcl-1 HOÀNG VIỆT HÙNG
+                                    p.lcl.lcl-1 Trưởng nhóm thiết kế UX
+                        .swiper-slide
+                            a.member(href="https://www.linkedin.com/feed/" target="_blank")
+                                .member__image
+                                    img(src="../assets/images/about/huyen-pham.jpg", alt="huyen-pham")
+                                .member__desc
+                                    h4.lcl.lcl-1 PHẠM THANH HUYỀN
+                                    p.lcl.lcl-1 Trưởng nhóm thiết kế UI
+                        .swiper-slide
+                            a.member(href="https://www.linkedin.com/feed/" target="_blank")
+                                .member__image
+                                    img(src="../assets/images/about/trang-tran.jpg", alt="trang-tran")
+                                .member__desc
+                                    h4.lcl.lcl-1 TRẦN THỊ THUỲ TRANG
+                                    p.lcl.lcl-1 Chuyên viên phân tích nghiệp vụ
+                        .swiper-slide
+                            a.member(href="https://www.linkedin.com/feed/" target="_blank")
+                                .member__image
+                                    img(src="../assets/images/about/phat-dang.jpg", alt="phat-dang")
+                                .member__desc
+                                    h4.lcl.lcl-1 ĐẶNG MINH PHÁT
+                                    p.lcl.lcl-1 Kỹ sư hệ thống cao cấp
+                        .swiper-slide
+                            a.member(href="https://www.linkedin.com/feed/" target="_blank")
+                                .member__image
+                                    img(src="../assets/images/about/nhan-nguyen.jpg", alt="nhan-nguyen")
+                                .member__desc
+                                    h4.lcl.lcl-1 NGUYỄN PHÚC THÀNH NHÂN
+                                    p.lcl.lcl-1 Kỹ sư hệ thống cao cấp
