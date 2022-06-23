@@ -1,0 +1,153 @@
+extends ../layouts/layout
+
+block params
+    - class_body = "solution-page"
+    - title_page = "Bemo Cloud | Solution"
+    - url_bg_banner_title = "../assets/images/banner-title/solution.png"
+    - heading_banner_title = "GIẢI PHÁP"
+    - desc_banner_title = "Bemo mang đến nhiều giải pháp hiệu quả giải quyết vấn đề doanh nghiệp của bạn"
+block css
+    link(rel="stylesheet", href="./assets/css/solution.css")
+block js
+block main
+    include ../components/banner-title
+    section.categories-solution-section
+        .container
+            .title-default
+                h3.sub-title-default CATEGORIES SOLUTION
+                h2.main-title-default You are looking for SOLUTION
+            .categories-solution
+                a(href="solution-by-category.html").category__item
+                    .icon
+                        i.far.fa-users
+                    p Human Resource
+                a(href="solution-by-category.html").category__item
+                    .icon
+                        i.fas.fa-laptop
+                    p IT Helpdesk
+                a(href="solution-by-category.html").category__item
+                    .icon
+                        i.far.fa-hand-holding-box
+                    p Purchase
+                a(href="solution-by-category.html").category__item
+                    .icon
+                        i.far.fa-puzzle-piece
+                    p Project
+                a(href="solution-by-category.html").category__item
+                    .icon
+                        i.far.fa-handshake
+                    p CRM
+    section.solution-posts-section
+        .container
+            .title-default
+                    h3.sub-title-default CATEGORIES SOLUTION
+                    h2.main-title-default You are looking for SOLUTION
+            .solution-posts
+                .post__item
+                    .item__img
+                        img(src="../assets/images/solution/post-01.png", alt="ERP giải pháp giao việc hiệu quả tăng hiệu suất nguồn nhân lực")
+                    .item__content
+                        .content__time
+                            .icon
+                                i.far.fa-clock
+                            span 10.10.2021
+                        h4.content__heading
+                            span.lcl.lcl-1 ERP giải pháp giao việc hiệu quả tăng hiệu suất nguồn nhân lực
+                        a(href="solution-by-category.html").content__tag Human Resource
+                        .content__desc.lcl.lcl-4 Khó khăn trong quy trình giao việc của phòng ban Hiện nay, chuyển đổi số là điều tất yếu nếu doanh nghiệp muốn phát triển. Tuy nhiên, thực tế cho thấy còn khá nhiều doanh nghiệp quản lý công việc dựa trên email, giấy tờ làm mất nhiều thời gian cho việc tìm kiếm, theo dõi tiến độ, thậm chí là làm việc chồng chéo, năng suất không cao
+                        a.btn.btn-sm.btn-outline-gray(href="solution-detail.html")
+                            span XEM CHI TIẾT
+                            i.fal.fa-angle-right
+                .post__item
+                    .item__img
+                        img(src="../assets/images/solution/post-02.png", alt="[CASE STUDY] Giải pháp ERP cho doanh nghiệp sản xuất phần mềm")
+                    .item__content
+                        .content__time
+                            .icon
+                                i.far.fa-clock
+                            span 10.10.2021
+                        h4.content__heading
+                            span.lcl.lcl-1 [CASE STUDY] Giải pháp ERP cho doanh nghiệp sản xuất phần mềm
+                        a(href="solution-by-category.html").content__tag Purchase
+                        .content__desc.lcl.lcl-4 BAP IT CO., JSC Lĩnh vực: dịch vụ sản xuất phần mềm Quy mô: 350 nhân sự, 5 chi nhánh ở 2 quốc gia Phạm vi áp dụng: toàn doanh nghiệp 2. Các vấn đề trước chuyển đổi ? Mỗi bộ phận sử dụng một công cụ, phần mềm khác nhau chẳng hạn như giao tiếp nội bộ sử dụng Slack, hoặc tích hợp Jira, Trello để quản lý
+                        a.btn.btn-sm.btn-outline-gray(href="solution-detail.html")
+                            span XEM CHI TIẾT
+                            i.fal.fa-angle-right
+                .post__item
+                    .item__img
+                        img(src="../assets/images/solution/post-03.png", alt="[CASE STUDY] Giải pháp ERP cho doanh nghiệp sản xuất phần mềm")
+                    .item__content
+                        .content__time
+                            .icon
+                                i.far.fa-clock
+                            span 10.10.2021
+                        h4.content__heading
+                            span.lcl.lcl-1 ERP đem đến giải pháp quản trị bán hàng giúp tối đa hóa lợi nhuận
+                        a(href="solution-by-category.html").content__tag Human Resource
+                        .content__desc.lcl.lcl-4 Những quy trình bán hàng cồng kềnh là nguyên nhân chính ảnh hưởng đến kinh doanh của doanh nghiệp. Bài viết này sẽ giúp bạn thấy được ERP đã xây dựng quy trình bán hàng của doanh nghiệp như thế nào nhằm mang lại hiệu quả kinh doanh bền vững. 1. Những khó khăn trong quy trình bán hàng truyền thống Khi quy mô kinh doanh phát triển đòi hỏi
+                        a.btn.btn-sm.btn-outline-gray(href="solution-detail.html")
+                            span XEM CHI TIẾT
+                            i.fal.fa-angle-right
+                .post__item
+                    .item__img
+                        img(src="../assets/images/solution/post-04.png", alt="ERP đem đến giải pháp quản trị bán hàng giúp tối đa hóa lợi nhuận")
+                    .item__content
+                        .content__time
+                            .icon
+                                i.far.fa-clock
+                            span 10.10.2021
+                        h4.content__heading
+                            span.lcl.lcl-1 Tài sản doanh nghiệp được quản lý chặt chẽ với ERP như thế nào?
+                        a(href="solution-by-category.html").content__tag IT Helpdesk
+                        .content__desc.lcl.lcl-4 Quản lý tài sản rất quan trọng với mỗi doanh nghiệp, vì khi quy trình lỏng lẻo dễ dàng gây thất thoát, hư hại, cũng không tính được hiệu suất sử dụng của tài sản. Do đó, khi chuyển đổi số, quy trình quản lý tài sản trên ERP sẽ tối ưu những lỗ hổng trong khâu vận hành khi mọi hoạt động cấp phát, sử dụng, bảo trì đều
+                        a.btn.btn-sm.btn-outline-gray(href="solution-detail.html")
+                            span XEM CHI TIẾT
+                            i.fal.fa-angle-right
+                .post__item
+                    .item__img
+                        img(src="../assets/images/solution/post-05.png", alt="Tài sản doanh nghiệp được quản lý chặt chẽ với ERP như thế nào?")
+                    .item__content
+                        .content__time
+                            .icon
+                                i.far.fa-clock
+                            span 10.10.2021
+                        h4.content__heading
+                            span.lcl.lcl-1 ERP thực sự mang đến hiệu quả chăm sóc khách hàng - CRM cho doanh nghiệp?
+                        a(href="solution-by-category.html").content__tag IT Helpdesk
+                        .content__desc.lcl.lcl-4 Khi triển khai hệ thống ERP, phân hệ chăm sóc khách hàng (CRM) được nhiều doanh nghiệp chú trọng, vì đây là công cụ kết nối, xây dựng mối quan hệ với khách hàng chặt chẽ. Hãy cùng tìm hiểu phân hệ này sẽ giúp doanh nghiệp phát triển ra sao trong bài viết này nhé. 1. Chăm sóc khách hàng (CRM) là gì? Khái niệm chăm sóc khách hàng
+                        a.btn.btn-sm.btn-outline-gray(href="solution-detail.html")
+                            span XEM CHI TIẾT
+                            i.fal.fa-angle-right
+                .post__item
+                    .item__img
+                        img(src="../assets/images/solution/post-06.png", alt="Tài sản doanh nghiệp được quản lý chặt chẽ với ERP như thế nào?")
+                    .item__content
+                        .content__time
+                            .icon
+                                i.far.fa-clock
+                            span 10.10.2021
+                        h4.content__heading
+                            span.lcl.lcl-1 BEMO và giải pháp trong quản trị nguồn nhân lực
+                        a(href="solution-by-category.html").content__tag IT Helpdesk
+                        .content__desc.lcl.lcl-4 Quản trị nguồn nhân lực với phân hệ ERP mang đến nhiều lợi ích to lớn giải quyết các khó khăn của doanh nghiệp và phòng nhân sự. Nhưng đa số những doanh nghiệp tầm trung trở lên vẫn chưa thể ra quyết định triển khai ERP, vì họ cần nhiều thông tin để xác thực tính hiệu quả. Bài viết này sẽ cho bạn thấy ERP đã giải quyết
+                        a.btn.btn-sm.btn-outline-gray(href="solution-detail.html")
+                            span XEM CHI TIẾT
+                            i.fal.fa-angle-right
+            ul.pagination
+                li.pagination-prev
+                    a(href="#")
+                        span.lnr.lnr-chevron-left
+                li
+                    a(href="#") 1
+                li.active
+                    a(href="#") 2
+                li
+                    a(href="#") 3
+                li.pagination-dot
+                    a(href="#") ...
+                li
+                    a(href="#") 98
+                li.pagination-next
+                    a(href="#")
+                        span.lnr.lnr-chevron-right
+    include ../components/call-to-action-01.pug

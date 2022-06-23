@@ -1,0 +1,72 @@
+.pagination {
+    background: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 48px;
+    @media (max-width: 1024.98px) {
+        justify-content: center;
+    }
+    li {
+        a {
+            color: map-get($map: $theme-colors, $key: "txt-gray");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32px;
+            width: 32px;
+            border-radius: 4px;
+            font-weight: 400;
+            background: #ffffff;
+            border: 0.1rem solid map-get($map: $theme-colors, $key: "txt-gray");
+            transition: all 0.2s cubic-bezier(0.2, 0.5, 0.5, 0.8);
+        }
+
+        &:hover {
+            a {
+                color: #ffffff;
+                background: map-get($map: $theme-colors, $key: "secondary");
+            }
+        }
+
+        &.active {
+            a {
+                color: #ffffff;
+                background: map-get($map: $theme-colors, $key: "primary");
+            }
+        }
+
+        &.pagination-dot {
+            a {
+                border: 0;
+            }
+        }
+        + li {
+            margin-left: 12px;
+        }
+    }
+    .lnr-chevron-left {
+        position: relative;
+        &::before {
+            content: "\f054";
+            font-family: map-get($map: $theme-fonts, $key: "icons");
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+    }
+    .lnr-chevron-right {
+        position: relative;
+        &::before {
+            content: "\f054";
+            position: absolute;
+            font-family: map-get($map: $theme-fonts, $key: "icons");
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &--center {
+        justify-content: center;
+    }
+}

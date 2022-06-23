@@ -1,0 +1,124 @@
+extends ../layouts/layout
+
+block params
+    - class_body = "solution-detail-page"
+    - title_page = "Bemo Cloud | Knowledge Detail"
+    - url_bg_banner_title = "../assets/images/banner-title/solution.png"
+    - heading_banner_title = "Chia sẻ kiến thức"
+    - desc_banner_title = "Bemo mang đến nhiều giải pháp hiệu quả giải quyết vấn đề doanh nghiệp của bạn"
+block css
+    link(rel="stylesheet", href="./assets/css/article-detail.css")
+block js
+    script(src="./assets/js/article-detail.js")
+block main
+    include ../components/banner-title
+    section.article-detail-section
+        .container
+            .row
+                .col-lg-8
+                    .article-content-wrapper
+                        .article-banner
+                            img(src="../assets/images/article-detail/banner-article.png", alt="banner-article")
+                        .article-information
+                            .article-time
+                                .icon
+                                    i.far.fa-clock
+                                span 10.10.2021
+                            .share-article
+                                span Share now on:
+                                ul.socials
+                                    li.social__item
+                                        a(href="#")
+                                            i.fab.fa-facebook
+                                    li.social__item
+                                        a(href="#")
+                                            i.fab.fa-twitter
+                                    li.social__item
+                                        a(href="#")
+                                            i.fab.fa-whatsapp
+                        .article-content
+                            h1 ERP giải pháp giao việc hiệu quả tăng hiệu suất nguồn nhân lực
+                            p Bất kỳ doanh nghiệp nào, phòng ban nào cũng mong muốn đội ngũ của mình thật xuất sắc để mang lại kết quả vượt trội. But doing how to build the group work effect? Hãy theo dõi bài viết bên dưới nhé.
+                            h2 1. Khó khăn trong quy trình giao việc của phòng ban
+                            img(src="../assets/images/article-detail/detail-01.jpg", alt="detai-01")
+                            p Hiện nay, chuyển đổi số là điều tất yếu nếu doanh nghiệp muốn phát triển. Tuy nhiên, thực tế cho thấy còn khá nhiều doanh nghiệp quản lý công việc dựa trên email, giấy tờ làm mất nhiều thời gian cho việc tìm kiếm, theo dõi tiến độ, thậm chí là làm việc chồng chéo, năng suất không cao.
+                            p Với các nhà quản trị, đặc biệt đi công tác thường xuyên, hay phải ra ngoài gặp gỡ khách hàng, thì với cách quản lý thủ công sẽ khó nắm bắt được tình hình công việc, hoặc khi giao việc phải ghi chép vào lịch làm việc để nhắc nhở nhân viên hoàn thành công việc và không thể
+                                a(href="#") quản lý hiệu suất làm việc của nhân viên…
+                            p Đối với nhân viên, nếu không biết cách sắp xếp công việc, dễ bỏ qua hay quên các việc cần làm, hoặc không biết việc nào là quan trọng cần xử lý trước…Điều đó dẫn đến nhân viên không thể hoàn thành hết công việc, chán nản, thậm chí suy nghĩ cấp quản lý “đì” mình, gây mất đoàn kết và động lực làm việc.
+                            p Thêm nữa, mắt xích công việc trong các phòng ban không đồng nhất, vì luồng công việc không được gắn kết, hiệu quả của phòng cũng giảm sút.
+                            p Bạn sẽ vẫn tiếp tục với cách quản lý cũ, hay duy trì tình trạng hiện tại ? Với công nghệ 4.0, những phần mềm hiện tại ra đời giúp doanh nghiệp giải phóng tiềm năng, phát triển vượt bậc. Vì thế điều cấp thiết của doanh nghiệp là cân nhắc giải pháp quản trị toàn diện từ ERP.
+                            h2 2. ERP mang đến hiệu quả giao việc thông minh cho doanh nghiệp
+                            p Triển khai ERP là bước đi sáng suốt để tối ưu hiệu suất công việc với quy trình làm việc gồm:
+                            ul
+                                li Cấp quản lý có thể kiểm soát các đầu mục công việc phòng ban với một bảng chi tiết công việc của nhân viên, bao gồm: mức độ hoàn thành, các việc trễ hạn hay không…để có phương án hỗ trợ.
+                                li Việc lên kế hoạch phân việc dễ dàng hơn, vì hệ thống có thể phân tích hiệu suất của từng nhân viên để cấp quản lý dựa vào đó phân chia theo năng lực làm việc.
+                                li Tăng tính minh bạch trong việc đánh giá nhân viên, tạo động lực cho nhân viên cống hiến hết mình.
+                                li Các báo cáo thống kê rõ ràng, chính xác, sát với thời gian thực và có thể tùy chỉnh linh hoạt theo mục đích quản trị
+                            p Nhờ vào phân hệ quản lý công việc BEMO ERP đã giúp các doanh nghiệp xóa bỏ cách làm truyền thống kém hiệu quả:
+                            ul
+                                li Tối ưu được hiệu quả sử dụng nguồn lực, tăng hiệu suất làm việc, tăng tính chủ động của nhân viên.
+                                li Nhà quản trị có thể quản lý các dự án, đánh giá hiệu quả dự án. Tất cả dữ liệu tài chính cũng có thể liên kết trên phần mềm, giúp doanh nghiệp đưa ra các chiến lược phù hợp.
+                            p Nếu bạn đang có ý định áp dụng hệ thống ERP cho doanh nghiệp, thì có thể liên hệ và trải nghiệm các tính năng với chi phí cạnh tranh nhất trước khi chuyển đổi cả một hệ thống phức tạp.
+                .col-lg-4
+                    .article-aside
+                        .article-aside-block
+                            h3.article-aside-title Latest Posts
+                            .article-aside-posts
+                                a(href="solution-detail.html").post__item
+                                    .item__image
+                                        img(src="../assets/images/article-detail/aside-post.png", alt="aside-post")
+                                    .item__content
+                                        .post__time
+                                            .icon
+                                                i.far.fa-clock
+                                            span 10.10.2021
+                                        .post__heading.lcl.lcl-2 [CASE STUDY] Giải pháp ERP cho doanh nghiệp sản xuất
+                                a(href="solution-detail.html").post__item
+                                    .item__image
+                                        img(src="../assets/images/article-detail/aside-post.png", alt="aside-post")
+                                    .item__content
+                                        .post__time
+                                            .icon
+                                                i.far.fa-clock
+                                            span 10.10.2021
+                                        .post__heading.lcl.lcl-2 [CASE STUDY] Giải pháp ERP cho doanh nghiệp sản xuất
+                                a(href="solution-detail.html").post__item
+                                    .item__image
+                                        img(src="../assets/images/article-detail/aside-post.png", alt="aside-post")
+                                    .item__content
+                                        .post__time
+                                            .icon
+                                                i.far.fa-clock
+                                            span 10.10.2021
+                                        .post__heading.lcl.lcl-2 [CASE STUDY] Giải pháp ERP cho doanh nghiệp sản xuất
+                        .article-aside-block
+                            h3.article-aside-title Blog
+                            .article-aside-posts
+                                a(href="blog-detail.html").post__item
+                                    .item__image
+                                        img(src="../assets/images/article-detail/aside-post.png", alt="aside-post")
+                                    .item__content
+                                        .post__time
+                                            .icon
+                                                i.far.fa-clock
+                                            span 10.10.2021
+                                        .post__heading.lcl.lcl-2 [CASE STUDY] Giải pháp ERP cho doanh nghiệp sản xuất
+                                a(href="blog-detail.html").post__item
+                                    .item__image
+                                        img(src="../assets/images/article-detail/aside-post.png", alt="aside-post")
+                                    .item__content
+                                        .post__time
+                                            .icon
+                                                i.far.fa-clock
+                                            span 10.10.2021
+                                        .post__heading.lcl.lcl-2 [CASE STUDY] Giải pháp ERP cho doanh nghiệp sản xuất
+                                a(href="blog-detail.html").post__item
+                                    .item__image
+                                        img(src="../assets/images/article-detail/aside-post.png", alt="aside-post")
+                                    .item__content
+                                        .post__time
+                                            .icon
+                                                i.far.fa-clock
+                                            span 10.10.2021
+                                        .post__heading.lcl.lcl-2 [CASE STUDY] Giải pháp ERP cho doanh nghiệp sản xuất
+    include ../components/related-posts

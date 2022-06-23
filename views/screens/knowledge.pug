@@ -1,0 +1,104 @@
+extends ../layouts/layout
+
+block params
+    - class_body = "knowledge-page"
+    - title_page = "Bemo Cloud | Knowledge"
+    - url_bg_banner_title = "../assets/images/banner-title/knowledge.png"
+    - heading_banner_title = "Chia sẻ kiến thức"
+    - desc_banner_title = "Bemo mang đến nhiều giải pháp hiệu quả giải quyết vấn đề doanh nghiệp của bạn"
+block css
+    link(rel="stylesheet", href="./assets/css/knowledge.css")
+block js
+block main
+    include ../components/banner-title
+    section.knowledge-posts-section
+        .container
+            .knowledge-posts
+                a.post__item(href="knowledge-detail.html")
+                    .item__img
+                        img(src="../assets/images/knowledge/post-01.png", alt="ERP giải pháp giao việc hiệu quả tăng hiệu suất nguồn nhân lực")
+                    .item__content
+                        .content__time
+                            .icon
+                                i.far.fa-calendar-alt
+                            span 10.10.2021
+                        h4.content__heading
+                            span.lcl.lcl-2 Tìm hiểu cách xây dựng nhóm làm việc hiệu quả
+                        .content__desc.lcl.lcl-4 Bất kỳ doanh nghiệp nào, phòng ban nào cũng mong muốn đội ngũ của mình thật xuất sắc để mang lại kết quả vượt trội. But doing how to build the group work effect?
+                        .btn-see-more
+                            span XEM CHI TIẾT
+                            i.fal.fa-angle-right
+                a.post__item(href="knowledge-detail.html")
+                    .item__img
+                        img(src="../assets/images/knowledge/post-02.png", alt="[CASE STUDY] Giải pháp ERP cho doanh nghiệp sản xuất phần mềm")
+                    .item__content
+                        .content__time
+                            .icon
+                                i.far.fa-calendar-alt
+                            span 10.10.2021
+                        h4.content__heading
+                            span.lcl.lcl-2 Thay đổi tư duy lãnh đạo trong thời đại 4.0
+                        .content__desc.lcl.lcl-4 Tư duy người lãnh đạo rất quan trọng trong thời đại số và là nhân tố góp phần phát triển kinh doanh. Nhưng hơn 80% doanh nghiệp hiện nay vẫn chưa áp dụng...
+                        .btn-see-more
+                            span XEM CHI TIẾT
+                            i.fal.fa-angle-right
+                a.post__item(href="knowledge-detail.html")
+                    .item__img
+                        img(src="../assets/images/knowledge/post-03.png", alt="[CASE STUDY] Giải pháp ERP cho doanh nghiệp sản xuất phần mềm")
+                    .item__content
+                        .content__time
+                            .icon
+                                i.far.fa-calendar-alt
+                            span 10.10.2021
+                        h4.content__heading
+                            span.lcl.lcl-2 Kỹ năng Cross-selling hiệu quả cho dân bán hàng
+                        .content__desc.lcl.lcl-4 Thuật ngữ Cross-selling được áp dụng rất nhiều trong giảng đường, và các doanh nghiệp cũng sử dụng nhiều trong chiến lược kinh doanh để tăng thành tích bán...
+                        .btn-see-more
+                            span XEM CHI TIẾT
+                            i.fal.fa-angle-right
+                a.post__item(href="knowledge-detail.html")
+                    .item__img
+                        img(src="../assets/images/knowledge/post-04.png", alt="ERP đem đến giải pháp quản trị bán hàng giúp tối đa hóa lợi nhuận")
+                    .item__content
+                        .content__time
+                            .icon
+                                i.far.fa-calendar-alt
+                            span 10.10.2021
+                        h4.content__heading
+                            span.lcl.lcl-2 Tips: Thuyết phục cấp lãnh đạo đổi mới với công nghệ
+                        .content__desc.lcl.lcl-4 Thuyết phục cấp lãnh đạo là một kỹ năng mềm đáng gờm, và đòi hỏi người đề xuất ý tưởng phải khéo léo bằng những chiến thuật khôn ngoan. Vậy nên, bài viết này...
+                        .btn-see-more
+                            span XEM CHI TIẾT
+                            i.fal.fa-angle-right
+                a.post__item(href="knowledge-detail.html")
+                    .item__img
+                        img(src="../assets/images/knowledge/post-05.png", alt="Tài sản doanh nghiệp được quản lý chặt chẽ với ERP như thế nào?")
+                    .item__content
+                        .content__time
+                            .icon
+                                i.far.fa-calendar-alt
+                            span 10.10.2021
+                        h4.content__heading
+                            span.lcl.lcl-2 Tips: Rèn luyện kỹ năng thuyết phục người khác hiệu quả
+                        .content__desc.lcl.lcl-4 Kỹ năng thuyết phục người khác được chú trọng trong xã hội ngày nay, vì chúng mang lại những lợi ích to lớn cho cá nhân lẫn doanh nghiệp. Bài viết hôm nay, BEMO...
+                        .btn-see-more
+                            span XEM CHI TIẾT
+                            i.fal.fa-angle-right
+            ul.pagination.pagination--center
+                li.pagination-prev
+                    a(href="#")
+                        span.lnr.lnr-chevron-left
+                li
+                    a(href="#") 1
+                li.active
+                    a(href="#") 2
+                li
+                    a(href="#") 3
+                li.pagination-dot
+                    a(href="#") ...
+                li
+                    a(href="#") 98
+                li.pagination-next
+                    a(href="#")
+                        span.lnr.lnr-chevron-right
+    include ../components/call-to-action-01.pug

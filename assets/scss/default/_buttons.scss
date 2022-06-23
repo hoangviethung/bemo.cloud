@@ -13,6 +13,14 @@
     border-radius: 0.5rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
         border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    span {
+        ~ i {
+            margin-left: 8px;
+        }
+    }
+    > i {
+        font-size: 1.5rem;
+    }
 }
 
 .btn-sm {
@@ -297,6 +305,22 @@
     &:active {
         color: rgba($color: #ffffff, $alpha: 0.8);
         border-color: rgba($color: #ffffff, $alpha: 0.8);
+    }
+}
+
+.btn-outline-gray {
+    color: map-get($map: $theme-colors, $key: "txt-gray");
+    border-color: map-get($map: $theme-colors, $key: "txt-gray");
+    &:hover,
+    &:active {
+        color: rgba(
+            $color: map-get($map: $theme-colors, $key: "txt-gray"),
+            $alpha: 0.8
+        );
+        border-color: rgba(
+            $color: map-get($map: $theme-colors, $key: "txt-gray"),
+            $alpha: 0.8
+        );
     }
 }
 

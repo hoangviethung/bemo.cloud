@@ -1,0 +1,168 @@
+@import "../scss/default/varivables.scss";
+
+.article-detail-section {
+    padding: 80px 0;
+    @media (max-width: 575.98px) {
+        padding: 40px 0;
+    }
+}
+
+.article-content-wrapper {
+    .article-banner {
+        overflow: hidden;
+        border-radius: 16px;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .article-information {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+    .article-time {
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+        .icon {
+            color: map-get($map: $theme-colors, $key: "primary");
+            margin-right: 8px;
+        }
+        span {
+            font-weight: 700;
+        }
+    }
+    .share-article {
+        display: flex;
+        align-items: center;
+        .socials {
+            display: flex;
+            align-items: center;
+            margin-left: 8px;
+            .social__item {
+                > a {
+                    font-size: 1.125rem;
+                    color: map-get($map: $theme-colors, $key: "txt-gray");
+                }
+                + .social__item {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+    .article-content {
+        margin-top: 24px;
+        h1,
+        h2,
+        p {
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
+        h2 {
+            color: map-get($map: $theme-colors, $key: "txt-gray");
+            font-size: 1.25rem;
+        }
+        a {
+            margin: 0 4px;
+            color: map-get($map: $theme-colors, $key: "secondary");
+        }
+        ul {
+            padding-left: 16px;
+            margin-bottom: 16px;
+            li {
+                &:before {
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    background-color: #5f5f5f;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                    margin-bottom: 2px;
+                }
+                + li {
+                    margin-top: 8px;
+                }
+            }
+        }
+        img {
+            margin: 0 auto 16px;
+        }
+    }
+}
+
+.article-aside {
+    .article-aside-title {
+        font-size: 1.25rem;
+        margin-bottom: 16px;
+    }
+    .article-aside-posts {
+        .post__item {
+            color: map-get($map: $theme-colors, $key: "txt-body");
+            display: grid;
+            grid-template-columns: 70px auto;
+            gap: 10px;
+            + .post__item {
+                margin-top: 24px;
+            }
+            &:hover {
+                .post__heading {
+                    color: map-get($map: $theme-colors, $key: "secondary");
+                }
+            }
+        }
+        .post__time {
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            .icon {
+                color: map-get($map: $theme-colors, $key: "primary");
+                margin-right: 4px;
+            }
+        }
+        .item__image {
+            border-radius: 8px;
+            overflow: hidden;
+            height: 70px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+        .item__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .post__heading {
+            font-size: 0.875rem;
+            font-weight: 700;
+            transition: 0.3s all ease-in-out;
+        }
+    }
+    .article-aside-block {
+        padding: 56px 32px;
+        background-color: map-get(
+            $map: $theme-colors,
+            $key: "primary-blue-light-color-06"
+        );
+        border-radius: 16px;
+        + .article-aside-block {
+            margin-top: 32px;
+        }
+    }
+    @media (max-width: 1024.98px) {
+        display: none;
+    }
+}

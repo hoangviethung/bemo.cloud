@@ -1,0 +1,58 @@
+extends ../layouts/layout
+
+block params
+    - class_body = "solution-by-category-page"
+    - title_page = "Bemo Cloud | Solution Human Resource"
+    - url_bg_banner_title = "../assets/images/banner-title/hrm.png"
+    - heading_banner_title = "Solution - Human Resource"
+    - desc_banner_title = "Nhà quản trị có thể quản lý các dự án, đánh giá hiệu quả dự án. Tất cả dữ liệu tài chính cũng có thể liên kết trên phần mềm, giúp doanh nghiệp đưa ra các chiến lược phù hợp"
+block css
+    link(rel="stylesheet", href="./assets/css/solution.css")
+block js
+block main
+    include ../components/banner-title
+    section.categories-solution-section
+        .container
+            .title-default
+                h3.sub-title-default CATEGORIES SOLUTION
+                h2.main-title-default Human Resource
+            .categories-solution
+                a(href="solution.html").category__item.active
+                    .icon
+                        i.far.fa-users
+                    p Human Resource
+                a(href="solution-by-category.html").category__item
+                    .icon
+                        i.fas.fa-laptop
+                    p IT Helpdesk
+                a(href="solution-by-category.html").category__item
+                    .icon
+                        i.far.fa-hand-holding-box
+                    p Purchase
+                a(href="solution-by-category.html").category__item
+                    .icon
+                        i.far.fa-puzzle-piece
+                    p Project
+                a(href="solution-by-category.html").category__item
+                    .icon
+                        i.far.fa-handshake
+                    p CRM
+    section.solution-posts-section
+        .container
+            .solution-posts
+                .post__item
+                    .item__img
+                        img(src="../assets/images/solution/post-01.png", alt="ERP giải pháp giao việc hiệu quả tăng hiệu suất nguồn nhân lực")
+                    .item__content
+                        .content__time
+                            .icon
+                                i.far.fa-clock
+                            span 10.10.2021
+                        h4.content__heading
+                            span.lcl.lcl-1 ERP giải pháp giao việc hiệu quả tăng hiệu suất nguồn nhân lực
+                        a(href="solution-by-category.html").content__tag Human Resource
+                        .content__desc.lcl.lcl-4 Khó khăn trong quy trình giao việc của phòng ban Hiện nay, chuyển đổi số là điều tất yếu nếu doanh nghiệp muốn phát triển. Tuy nhiên, thực tế cho thấy còn khá nhiều doanh nghiệp quản lý công việc dựa trên email, giấy tờ làm mất nhiều thời gian cho việc tìm kiếm, theo dõi tiến độ, thậm chí là làm việc chồng chéo, năng suất không cao
+                        a.btn.btn-sm.btn-outline-gray(href="#")
+                            span XEM CHI TIẾT
+                            i.fal.fa-angle-right
+    include ../components/call-to-action-01.pug
