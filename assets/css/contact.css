@@ -1,1 +1,96 @@
-:root{--color-primary: #0c3255;--color-primary-dark-01: #051423;--color-primary-dark-02: #081f36;--color-primary-blue-medium-color-01: #12497d;--color-primary-blue-medium-color-02: #175ea1;--color-primary-blue-medium-color-03: #1c73c4;--color-primary-blue-light-color-01: #2988e0;--color-primary-blue-light-color-02: #4c9ce6;--color-primary-blue-light-color-03: #70afeb;--color-primary-blue-light-color-04: #b8d7f5;--color-primary-blue-light-color-05: #dbebfa;--color-primary-blue-light-color-06: #f1f6f9;--color-secondary: #ffa800;--color-txt-body: #333;--color-txt-gray: gray;--color-background-1: #fff;--color-border: #e9e7ee;--color-success: #09c253;--color-info: #1470eb;--color-warning: #f9b506;--color-error: #da0b0b;--font-body: Roboto;--font-icons: Font Awesome 5 Pro}.offices-company{padding-bottom:80px}.offices-company .offices-list{margin-top:56px;display:grid;grid-template-columns:repeat(3, 1fr);grid-gap:32px}@media (max-width: 1024.98px){.offices-company .offices-list{grid-template-columns:repeat(2, 1fr)}}@media (max-width: 767.98px){.offices-company .offices-list{grid-template-columns:repeat(1, 1fr)}}.offices-company .office__item h4{text-transform:uppercase;color:#0c3255}.offices-company .office__item h4:before{font-size:1.125rem;content:"\f3c5";color:#ffa800;font-family:"Font Awesome 5 Pro";margin-right:8px}.offices-company .office__item .office__desc{font-size:0.875rem;margin-top:16px;margin-bottom:16px}.offices-company .office__item .office__desc li.address:before{content:"\f1ad"}.offices-company .office__item .office__desc li.phone-number:before{content:"\f095"}.offices-company .office__item .office__desc li.time-work:before{content:"\f017"}.offices-company .office__item .office__desc li:before{margin-right:4px;font-family:"Font Awesome 5 Pro"}.offices-company .office__item .office__desc li+li{margin-top:8px}@media (max-width: 575.98px){.offices-company{padding-bottom:40px}}
+:root {
+  --color-primary: #0c3255;
+  --color-primary-dark-01: #051423;
+  --color-primary-dark-02: #081f36;
+  --color-primary-blue-medium-color-01: #12497d;
+  --color-primary-blue-medium-color-02: #175ea1;
+  --color-primary-blue-medium-color-03: #1c73c4;
+  --color-primary-blue-light-color-01: #2988e0;
+  --color-primary-blue-light-color-02: #4c9ce6;
+  --color-primary-blue-light-color-03: #70afeb;
+  --color-primary-blue-light-color-04: #b8d7f5;
+  --color-primary-blue-light-color-05: #dbebfa;
+  --color-primary-blue-light-color-06: #f1f6f9;
+  --color-secondary: #ffa800;
+  --color-txt-body: #333333;
+  --color-txt-gray: #808080;
+  --color-background-1: #ffffff;
+  --color-border: #e9e7ee;
+  --color-success: #09c253;
+  --color-info: #1470eb;
+  --color-warning: #f9b506;
+  --color-error: #da0b0b;
+  --font-body: Roboto;
+  --font-icons: Font Awesome 5 Pro;
+}
+
+.offices-company {
+  padding-bottom: 80px;
+}
+
+.offices-company .offices-list {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+
+@media (max-width: 1024.98px) {
+  .offices-company .offices-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .offices-company .offices-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.offices-company .office__item h4 {
+  text-transform: uppercase;
+  color: #0c3255;
+}
+
+.offices-company .office__item h4:before {
+  font-size: 1.125rem;
+  content: "\f3c5";
+  color: #ffa800;
+  font-family: "Font Awesome 5 Pro";
+  margin-right: 8px;
+}
+
+.offices-company .office__item .office__desc {
+  font-size: 0.875rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.offices-company .office__item .office__desc li.address:before {
+  content: "\f1ad";
+}
+
+.offices-company .office__item .office__desc li.phone-number:before {
+  content: "\f095";
+}
+
+.offices-company .office__item .office__desc li.time-work:before {
+  content: "\f017";
+}
+
+.offices-company .office__item .office__desc li:before {
+  margin-right: 4px;
+  font-family: "Font Awesome 5 Pro";
+}
+
+.offices-company .office__item .office__desc li + li {
+  margin-top: 8px;
+}
+
+@media (max-width: 575.98px) {
+  .offices-company {
+    padding-bottom: 40px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

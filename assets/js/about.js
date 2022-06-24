@@ -21,7 +21,7 @@
                     slidesPerView: 1,
                     speed: 1000,
                     autoplay: {
-                        delay: 2000,
+                        delay: 3000,
                     },
                     spaceBetween: 0,
                     navigation: {
